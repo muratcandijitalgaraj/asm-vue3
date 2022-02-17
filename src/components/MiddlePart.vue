@@ -155,9 +155,9 @@ export default {
   width: auto;
   height: 93px !important;
 }
-// .telefonNoContainer {
-//   margin-bottom: 9px;
-// }
+.telefonNoContainer {
+  margin-bottom: 9px;
+}
 .countryCode {
   width: 100%;
   height: 60px;
