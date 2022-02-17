@@ -246,10 +246,10 @@ export default {
   },
   data() {
     return {
-      one: false,
+      one: true,
       two: false,
       three: false,
-      four: true,
+      four: false,
       //toggle
       oneIsCurrent: true,
       oneIsOnHold: false,
