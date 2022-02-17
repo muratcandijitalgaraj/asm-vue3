@@ -153,7 +153,7 @@ export default {
 .telContainer {
   @include flexCenter(row);
   width: auto;
-  height: 93px;
+  height: 93px !important;
 }
 .telefonNoContainer {
   margin-bottom: 9px;
