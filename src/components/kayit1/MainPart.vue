@@ -247,8 +247,8 @@ export default {
   },
   data() {
     return {
-      one: false,
-      two: true,
+      one: true,
+      two: false,
       three: false,
       four: false,
       //toggle
