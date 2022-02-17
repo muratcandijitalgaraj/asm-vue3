@@ -292,17 +292,14 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  /* border: 1px solid black; */
   margin-bottom: 53px;
   padding: 0;
 }
 .sections {
-  /* border: 1px solid black; */
 }
 .ONE {
   width: 468px;
   height: 400px;
-  /* border: 2px solid black; */
   /* display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -311,7 +308,6 @@ export default {
 .title {
   width: 146px;
   height: 29px;
-  /* border: 2px solid black; */
 
   /* baslik3 */
 
@@ -330,7 +326,6 @@ export default {
   margin-bottom: 18px;
 }
 .sections {
-  /* border: 2px solid black; */
   width: auto;
   height: 25px;
   display: flex;
@@ -347,7 +342,6 @@ export default {
 .section {
   height: 23px;
   width: 23px;
-  /* border: 1px solid black; */
   border-radius: 0px;
   margin-right: 8px;
 }
@@ -405,7 +399,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid black; */
 }
 
 .sectionChecked {
@@ -420,7 +413,6 @@ export default {
 .box {
   height: 423px;
   width: 468px;
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -510,7 +502,6 @@ input::placeholder {
   flex-direction: row;
   /* justify-content: center;
   align-items: center; */
-  /* border: 1px solid black; */
 }
 .uyruk {
   width: 100px;
@@ -548,7 +539,6 @@ input::placeholder {
 .tcNo {
   height: 60px;
   width: 348px;
-  /* border: 1px solid black; */
 
   border-radius: 6px;
 }
@@ -631,7 +621,6 @@ input::placeholder {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid black; */
   width: 220px;
   height: 160px;
   position: absolute;
@@ -696,7 +685,6 @@ input::placeholder {
   letter-spacing: -0.01em;
 
   /* Primary */
-  /* border: 1px solid red; */
   color: #3c4e69;
 }
 .FOUR {
