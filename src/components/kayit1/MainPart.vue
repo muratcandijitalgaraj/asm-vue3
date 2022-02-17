@@ -118,7 +118,6 @@
           <input placeholder="Soyisim" type="text" class="input" />
           <!--///////// DATE PICKER HERE ///////////////////////////// -->
           <Datepicker
-            @click="sth"
             placeholder="Doğum Tarihi (GG/AA/YYYY)"
             class="picker"
             v-model="date"
@@ -126,6 +125,8 @@
             autoApply
             :closeOnAutoApply="false"
             locale="tr"
+            :autoPosition="false"
+            :startDate="startDate"
           />
 
           <select class="dropDownSelect" name=" " id=" ">
@@ -227,9 +228,6 @@ export default {
   components: { Datepicker },
   setup() {
     const date = ref();
-    const sth = () => {
-      console.log("refe");
-    };
 
     const format = (date) => {
       const day = date.getDate();
@@ -238,11 +236,12 @@ export default {
 
       return `${day}/${month}/${year}`;
     };
+    const startDate = ref(new Date(1985, 1));
 
     return {
       date,
       format,
-      sth,
+      startDate,
     };
   },
   data() {
@@ -286,9 +285,6 @@ export default {
     ppUpload: function () {
       this.$refs.fileInput.click();
     },
-    // sth: function () {
-    //   console.log("hoy");
-    // },
   },
 };
 </script>
@@ -300,6 +296,7 @@ export default {
   height: 423px;
   /* width: 468px; */
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -752,8 +749,14 @@ input::placeholder {
 
   color: #818b9a !important;
 }
+/* for some reason, datepicker's color doesn't follow the other colors
+so I had to fix it by choosing a color by hand */
 .dp__input::placeholder {
   color: #575d66 !important;
+}
+.dp__button,
+.dp__button_bottom {
+  /* padding: 0; */
 }
 
 @media only screen and (max-width: 550px) {
