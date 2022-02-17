@@ -123,6 +123,8 @@
             class="picker"
             v-model="date"
             :format="format"
+            autoApply
+            :closeOnAutoApply="false"
           />
 
           <select class="dropDownSelect" name=" " id=" ">
