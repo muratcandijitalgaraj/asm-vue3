@@ -150,14 +150,13 @@ export default {
   color: #32a5df;
   margin-bottom: 35px;
 }
-//there's nesting here
 .telContainer {
   @include flexCenter(row);
-  // width: auto;
-  // height: auto;
-  .telefonNoContainer {
-    margin-bottom: 9px;
-  }
+  width: auto;
+  height: 93px;
+}
+.telefonNoContainer {
+  margin-bottom: 9px;
 }
 .countryCode {
   width: 100%;
