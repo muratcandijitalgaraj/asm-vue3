@@ -116,8 +116,14 @@
           </div>
           <input placeholder="İsim" type="text" class="input" />
           <input placeholder="Soyisim" type="text" class="input" />
-
-          <Datepicker class="picker" v-model="date"></Datepicker>
+          <!--///////// DATE PICKER HERE ///////////////////////////// -->
+          <Datepicker
+            @click="sth"
+            placeholder="Doğum Tarihi (GG/AA/YYYY)"
+            class="picker"
+            v-model="date"
+            :format="format"
+          />
 
           <select class="dropDownSelect" name=" " id=" ">
             <option class="optionValue" value="">Cinsiyet</option>
@@ -211,10 +217,31 @@
 </template>
 
 <script>
+import { ref } from "vue";
 import Datepicker from "vue3-date-time-picker";
 import "vue3-date-time-picker/dist/main.css";
 export default {
   components: { Datepicker },
+  setup() {
+    const date = ref();
+    const sth = () => {
+      console.log("refe");
+    };
+
+    const format = (date) => {
+      const day = date.getDate();
+      const month = date.getMonth() + 1;
+      const year = date.getFullYear();
+
+      return `${day}/${month}/${year}`;
+    };
+
+    return {
+      date,
+      format,
+      sth,
+    };
+  },
   data() {
     return {
       one: false,
@@ -226,7 +253,7 @@ export default {
       oneIsOnHold: false,
       isChecked: false,
       //date
-      date: null,
+      // date: null,
       //user inputs
       //section One
       ePosta: "",
@@ -256,6 +283,9 @@ export default {
     ppUpload: function () {
       this.$refs.fileInput.click();
     },
+    // sth: function () {
+    //   console.log("hoy");
+    // },
   },
 };
 </script>
@@ -463,6 +493,7 @@ input {
   /* identical to box height, or 16px */
   /* Primary */
   color: #3c4e69;
+  border: none !important;
 }
 .dp__icon,
 .dp__input_icon,
