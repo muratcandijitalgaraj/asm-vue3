@@ -153,6 +153,8 @@ export default {
 //there's nesting here
 .telContainer {
   @include flexCenter(row);
+  width: auto;
+  height: auto;
   .telefonNoContainer {
     margin-bottom: 9px;
   }
@@ -177,7 +179,7 @@ export default {
   /* Gri */
   color: #818b9a;
   text-align: center;
-  margin-bottom: 27px;
+  margin-bottom: 33px;
 }
 .telNo {
   width: 341px;
@@ -205,7 +207,7 @@ export default {
 }
 
 .sifre {
-  width: 455px;
+  width: 100%;
   height: 60px;
   background: #ffffff;
   /* Form Shadow */
@@ -468,6 +470,7 @@ export default {
   }
   .countryCode {
     width: 100px;
+    margin-bottom: 24px;
   }
   .telefonNoContainer {
     // border: 1px solid black;
