@@ -116,18 +116,9 @@
           </div>
           <input placeholder="İsim" type="text" class="input" />
           <input placeholder="Soyisim" type="text" class="input" />
-          <!-- <input
-            placeholder="Doğum Tarihi (GG/AA/YYYY)"
-            type="date"
-            class="input datePicker"
-          /> -->
-          <!-- <b-form-datepicker
-            placeholder="Doğum Tarihi (GG/AA/YYYY)"
-            id="example-datepicker"
-            locale="tr"
-            v-model="date"
-            class="mb-2 datePicker"
-          ></b-form-datepicker> -->
+
+          <Datepicker class="picker" v-model="date"></Datepicker>
+
           <select class="dropDownSelect" name=" " id=" ">
             <option class="optionValue" value="">Cinsiyet</option>
             <option class="optionValue" value="dog">Erkek</option>
@@ -194,6 +185,7 @@
             <option class="optionValue" value="dog">Dog</option>
             <option class="optionValue" value="cat">Cat</option>
           </select> -->
+
           <input placeholder="Kilo" type="number" min="10" max="1000" />
           <input placeholder="Boy (cm)" type="number" min="10" max="1000" />
 
@@ -219,11 +211,14 @@
 </template>
 
 <script>
+import Datepicker from "vue3-date-time-picker";
+import "vue3-date-time-picker/dist/main.css";
 export default {
+  components: { Datepicker },
   data() {
     return {
-      one: true,
-      two: false,
+      one: false,
+      two: true,
       three: false,
       four: false,
       //toggle
@@ -231,7 +226,7 @@ export default {
       oneIsOnHold: false,
       isChecked: false,
       //date
-      date: "",
+      date: null,
       //user inputs
       //section One
       ePosta: "",
@@ -265,7 +260,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .mainKayitComponent {
   position: relative;
   bottom: 12rem;
@@ -440,6 +435,41 @@ input {
   /* Primary */
   color: #3c4e69;
 }
+
+.picker {
+  width: 468px;
+  height: 60px;
+  background: #ffffff;
+
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 100%;
+  /* identical to box height, or 16px */
+  /* Primary */
+  color: #3c4e69;
+}
+.dp__pointer,
+.dp__input,
+.dp__input_icon_pad {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 100%;
+  /* identical to box height, or 16px */
+  /* Primary */
+  color: #3c4e69;
+}
+.dp__icon,
+.dp__input_icon,
+.dp__input_icons {
+  /* border: 2px solid red; */
+  padding-bottom: 1.8rem;
+}
 /* to style the placeholder separately from the input text */
 input::placeholder {
   /* form-baslik */
@@ -594,25 +624,7 @@ input::placeholder {
   background: #e9f3f9;
   margin-top: 35px;
 }
-.datePicker {
-  font-family: Nunito Sans !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-size: 16px !important;
-  line-height: 100% !important;
 
-  letter-spacing: -0.01em !important;
-
-  color: #818b9a !important;
-  width: 468px !important;
-  height: 60px !important;
-  border: none !important;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px !important;
-}
 .dropDownSelect {
   padding-left: 15px;
 }
@@ -710,10 +722,6 @@ input::placeholder {
   .dropDownSelect {
     width: 325px;
     /* height: 60px; */
-  }
-  .datePicker {
-    width: 325px !important;
-    /* height: 60px !important; */
   }
 }
 </style>
