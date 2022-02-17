@@ -742,6 +742,10 @@ input::placeholder {
     /* height: 100%; */
     width: 325px;
   }
+  .picker {
+    width: 325px;
+  }
+
   .button {
     width: 325px;
   }
