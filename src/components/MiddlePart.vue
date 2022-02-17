@@ -153,8 +153,8 @@ export default {
 //there's nesting here
 .telContainer {
   @include flexCenter(row);
-  width: auto;
-  height: auto;
+  // width: auto;
+  // height: auto;
   .telefonNoContainer {
     margin-bottom: 9px;
   }
