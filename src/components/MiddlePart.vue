@@ -233,7 +233,7 @@ export default {
   color: #818b9a;
 }
 .loginActions {
-  // border: 1px solid red;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -383,11 +383,11 @@ export default {
   // margin-bottom: 50px;
 }
 .checkboxImg {
-  width: auto;
-  height: auto;
+  width: 15px;
+  height: 15px;
   position: relative;
-  left: 4.5px;
-  top: 1px;
+  left: 2.3px;
+  top: 2px;
 }
 // tablet starts here
 @media only screen and (max-width: 1200px) {

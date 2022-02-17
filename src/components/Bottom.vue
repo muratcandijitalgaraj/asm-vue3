@@ -72,7 +72,6 @@ export default {};
 .textGroup {
   width: 439px;
   height: 100%;
-  // border: 1px solid black;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -142,7 +141,7 @@ export default {};
   margin-right: 30px;
 }
 .btnLogo {
-  width: 24.75px;
+  width: auto;
   height: 30px;
   padding-left: 1rem;
 }
@@ -185,6 +184,7 @@ export default {};
   color: #ffffff;
   /* border: 1px solid black; */
 }
+
 //tablet starts
 @media only screen and (max-width: 1170px) {
   .bottomComponent {
@@ -218,9 +218,18 @@ export default {};
   .textGroup {
     // justify-content: center;
     // border: 2px solid red;
-    position: relative;
-    left: 3rem;
+    // position: relative;
+    // left: 3rem;
+    // margin-top: 1rem;
+    width: auto;
     margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .blueText {
+    width: auto;
+  }
+  .orangeText {
+    width: auto;
   }
   .arrow {
     display: none;
