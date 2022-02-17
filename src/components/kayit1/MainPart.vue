@@ -398,8 +398,8 @@ export default {
   display: none;
 } */
 .vectorContainer {
-  height: 100%;
-  width: 100%;
+  height: 23px;
+  width: 23px;
   background: #ff8038;
   border-radius: 50%;
   display: flex;
