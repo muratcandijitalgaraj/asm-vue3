@@ -247,8 +247,8 @@ export default {
   },
   data() {
     return {
-      one: true,
-      two: false,
+      one: false,
+      two: true,
       three: false,
       four: false,
       //toggle
@@ -735,6 +735,25 @@ input::placeholder {
 }
 .FOUR {
   margin-top: 145px;
+}
+::placeholder {
+  /* form-baslik */
+
+  font-family: Nunito Sans !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+  line-height: 100% !important;
+  /* identical to box height, or 16px */
+
+  letter-spacing: -0.01em !important;
+
+  /* Gri */
+
+  color: #818b9a !important;
+}
+.dp__input::placeholder {
+  color: #575d66 !important;
 }
 
 @media only screen and (max-width: 550px) {
