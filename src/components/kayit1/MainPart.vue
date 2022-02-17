@@ -247,9 +247,9 @@ export default {
   data() {
     return {
       one: false,
-      two: true,
+      two: false,
       three: false,
-      four: false,
+      four: true,
       //toggle
       oneIsCurrent: true,
       oneIsOnHold: false,
@@ -667,7 +667,8 @@ input::placeholder {
   width: 220px;
   height: 160px;
   position: absolute;
-  bottom: 12rem;
+  /* bottom: 12rem; */
+  top: 4.5rem;
   border-radius: 50%;
 }
 .uploadImageGroupContainer {
@@ -756,7 +757,7 @@ so I had to fix it by choosing a color by hand */
 }
 .dp__button,
 .dp__button_bottom {
-  /* padding: 0; */
+  display: none;
 }
 
 @media only screen and (max-width: 550px) {

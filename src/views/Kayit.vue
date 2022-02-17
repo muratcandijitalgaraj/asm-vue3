@@ -22,7 +22,7 @@ export default {
 $backgroundColor: #e9f3f9;
 .forBackgroundColor {
   width: 100%;
-  height: auto;
+  height: 100%;
   background: $backgroundColor;
   margin: 0;
   padding: 0;
@@ -31,7 +31,7 @@ $backgroundColor: #e9f3f9;
 .kayitComponent {
   width: 100%;
   //will change this later on
-  height: 100%;
+  height: auto;
   background: linear-gradient(
       0deg,
       #e9f3f9 12.23%,
