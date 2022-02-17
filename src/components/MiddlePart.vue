@@ -200,6 +200,7 @@ export default {
   /* Gri */
   color: #818b9a;
   padding-left: 15px;
+  margin-bottom: 0;
 }
 .sifreContainer {
   width: 468px;
