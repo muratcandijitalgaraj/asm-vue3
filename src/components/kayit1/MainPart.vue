@@ -125,6 +125,7 @@
             :format="format"
             autoApply
             :closeOnAutoApply="false"
+            locale="tr"
           />
 
           <select class="dropDownSelect" name=" " id=" ">
