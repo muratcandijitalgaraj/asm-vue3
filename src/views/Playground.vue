@@ -15,7 +15,7 @@ export default {
   async mounted() {
     try {
       this.info = await axios.get(
-        "http://localhost:8080/api/profile-service/lookups"
+        "https://mag.comed.com.tr/api/product-service/public/products"
       );
     } catch (err) {
       // Handle Error Here

@@ -1,5 +1,5 @@
-module.exports = {
-  devServer: {
-    proxy: "https://mag.comed.com.tr/",
-  },
-};
+// module.exports = {
+//   devServer: {
+//     proxy: "https://jsonplaceholder.typicode.com",
+//   },
+// };
