@@ -13,7 +13,7 @@
 <script>
 import Header from "../components/Header.vue";
 import Bulutlar from "../components/Bulutlar.vue";
-import MiddlePart from "../components/MiddlePart.vue";
+import MiddlePart from "../components/giris/MiddlePart.vue";
 import Bottom from "../components/Bottom.vue";
 import Footer from "../components/Footer.vue";
 

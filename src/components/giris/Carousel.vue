@@ -16,9 +16,9 @@
 </template>
 
 <script scoped>
-import image1 from "../assets/1.svg";
-import image2 from "../assets/2.svg";
-import image3 from "../assets/3.svg";
+import image1 from "../../assets/1.svg";
+import image2 from "../../assets/2.svg";
+import image3 from "../../assets/3.svg";
 import { defineComponent } from "vue";
 import { Carousel, Pagination, Slide } from "vue3-carousel";
 
