@@ -12,10 +12,15 @@ export default {
       info: null,
     };
   },
-  beforeCreate() {
-    axios
-      .get("https://jsonplaceholder.typicode.com/todos/1")
-      .then((response) => (this.info = response));
+  async mounted() {
+    try {
+      this.info = await axios.get(
+        "http://localhost:8080/api/profile-service/lookups"
+      );
+    } catch (err) {
+      // Handle Error Here
+      console.error(err);
+    }
   },
 };
 </script>
