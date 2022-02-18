@@ -63,7 +63,7 @@
 </template>
 
 <script>
-import Carousel from "./Carousel.vue";
+import Carousel from "./giris/Carousel.vue";
 export default {
   components: { Carousel },
   data() {
