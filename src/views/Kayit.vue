@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Header from "../components/Header.vue";
+import Header from "../components/shared/Header.vue";
 import Bulutlar from "../components/kayit1/Bulutlar.vue";
 import MainPart from "../components/kayit1/MainPart.vue";
 

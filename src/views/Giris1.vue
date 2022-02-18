@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import Header from "../components/Header.vue";
+import Header from "../components/shared/Header.vue";
 import Bulutlar from "../components/Bulutlar.vue";
 import MiddlePart from "../components/giris/MiddlePart.vue";
 import Bottom from "../components/Bottom.vue";
