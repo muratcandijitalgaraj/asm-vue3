@@ -3,8 +3,6 @@
 </template>
 
 <script>
-const axios = require("axios").default;
-
 // axios.<method> will now provide autocomplete and parameter typings
 export default {
   data() {
@@ -12,15 +10,15 @@ export default {
       info: null,
     };
   },
-  async mounted() {
-    try {
-      this.info = await axios.get(
-        "https://mag.comed.com.tr/api/product-service/public/products"
-      );
-    } catch (err) {
-      // Handle Error Here
-      console.error(err);
-    }
+  mounted() {
+    fetch("https://mag.comed.com.tr/api/abp/api-definition", {
+      mode: "no-cors",
+      credentials: "include",
+      method: "GET",
+    })
+      .then((response) => response.json())
+      .then((json) => console.log(json))
+      .catch((error) => console.log("Authorization failed : " + error.message));
   },
 };
 </script>
