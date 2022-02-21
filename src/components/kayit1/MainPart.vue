@@ -494,6 +494,7 @@ input {
   /* Primary */
   color: #3c4e69;
   border: none !important;
+  padding: 0 12px 0 35px;
 }
 .dp__icon,
 .dp__input_icon,
@@ -514,6 +515,7 @@ input::placeholder {
   /* Gri */
   color: #818b9a;
   padding-left: 15px;
+  padding-bottom: 5px;
 }
 
 .button {
