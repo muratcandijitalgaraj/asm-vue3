@@ -10,15 +10,20 @@ export default {
       info: null,
     };
   },
-  mounted() {
-    fetch("https://mag.comed.com.tr/api/abp/api-definition", {
-      mode: "no-cors",
-      credentials: "include",
-      method: "GET",
-    })
-      .then((response) => response.json())
-      .then((json) => console.log(json))
-      .catch((error) => console.log("Authorization failed : " + error.message));
+  async mounted() {
+    try {
+      const response = await fetch(
+        "https://jsonplaceholder.typicode.com/todos/1"
+      );
+      if (!response.ok) {
+        const message = "Error with Status Code: " + response.status;
+        throw new Error(message);
+      }
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.log("Error: " + error);
+    }
   },
 };
 </script>

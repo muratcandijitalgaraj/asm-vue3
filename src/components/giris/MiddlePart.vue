@@ -469,16 +469,15 @@ export default {
     width: auto;
   }
   .countryCode {
-    width: 100px;
+    width: 80px;
     margin-bottom: 24px;
   }
   .telefonNoContainer {
-    // border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: auto;
+    width: 200px;
   }
   .telNo {
     width: 100%;
@@ -488,13 +487,13 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 375px;
+    width: 300px;
   }
   .sifre {
     width: 100%;
   }
   .tamamButton {
-    width: 371px;
+    width: 300px;
   }
 }
 </style>

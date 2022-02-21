@@ -1,6 +1,7 @@
 <template>
   <div class="carouselComponent">
-    <Carousel class="caro" :autoplay="2000" :wrap-around="true">
+    <!-- :autoplay="2000" -->
+    <Carousel class="caro" :wrap-around="true">
       <Slide v-for="image in images" :key="image.id">
         <div class="carousel__item">
           <img class="image" :src="image.url" alt="" />
