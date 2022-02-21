@@ -1,7 +1,6 @@
 <template>
   <div class="carouselComponent">
-    <!-- :autoplay="2000" -->
-    <Carousel class="caro" :wrap-around="true">
+    <Carousel class="caro" :autoplay="3000" :wrap-around="true">
       <Slide v-for="image in images" :key="image.id">
         <div class="carousel__item">
           <img class="image" :src="image.url" alt="" />
@@ -53,6 +52,10 @@ export default defineComponent({
 </script>
 
 <style>
+.carouselComponent {
+  margin-left: 5rem;
+  margin-bottom: 4rem;
+}
 .carousel__pagination-button {
   margin: var(--vc-pgn-margin);
   width: var(--vc-pgn-width);
@@ -66,16 +69,22 @@ export default defineComponent({
 .carousel__pagination-button--active {
   background-color: black;
 }
-
+.carousel__item {
+  margin-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .carouselTexts {
-  width: 320px;
+  width: 300px;
   font-family: Nunito Sans;
   font-style: normal;
   font-weight: 800;
   text-align: center;
   font-size: 20px;
   margin-top: 27px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-left: 1rem;
 
   /* Primary */
