@@ -4,6 +4,8 @@
 
 <script>
 // axios.<method> will now provide autocomplete and parameter typings
+import axios from "axios";
+import qs from "qs";
 export default {
   data() {
     return {
@@ -11,19 +13,20 @@ export default {
     };
   },
   async mounted() {
-    try {
-      const response = await fetch(
-        "https://jsonplaceholder.typicode.com/todos/1"
-      );
-      if (!response.ok) {
-        const message = "Error with Status Code: " + response.status;
-        throw new Error(message);
-      }
-      const data = await response.json();
-      console.log(data);
-    } catch (error) {
-      console.log("Error: " + error);
-    }
+    const url = "http://localhost:8080/connect/token";
+    const data = {
+      client_id: "iCoMed_Mobile_IOS",
+      client_secret: "c@mEd3234_21!",
+      grant_type: "client_credentials",
+    };
+    const options = {
+      method: "POST",
+      headers: { "content-type": "application/x-www-form-urlencoded" },
+      data: qs.stringify(data),
+      url,
+    };
+    let res = await axios(options);
+    console.log(res.data);
   },
 };
 </script>
