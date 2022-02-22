@@ -5,6 +5,8 @@
 <script>
 // axios.<method> will now provide autocomplete and parameter typings
 import axios from "axios";
+//this library ensures that url encoded headers are read correctly.
+//Without it the logic doesn't work
 import qs from "qs";
 export default {
   data() {
