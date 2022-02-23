@@ -23,6 +23,7 @@
           placeholder="Sms Kodunu Giriniz"
           type="text"
           class="input"
+          v-model="smsCode"
         />
 
         <div v-if="accountBelongsToUser" class="sifrePart">
@@ -57,8 +58,24 @@
             </div>
           </div>
         </div>
-
-        <button @click="buttonControl" class="tamamButton">Tamam</button>
+        <!-- first button -->
+        <!-- show this button only if the user tel no is NOT correct -->
+        <button
+          v-if="!userTelNoCorrect"
+          @click="firstButtonControl"
+          class="tamamButton"
+        >
+          Tamam
+        </button>
+        <!-- second button -->
+        <!-- show this button once the user's tel no is correct -->
+        <button
+          v-if="userTelNoCorrect"
+          @click="secondButtonControl"
+          class="tamamButton"
+        >
+          Tamam
+        </button>
       </form>
       <div class="bulutPart">
         <div class="orta-bulut">
@@ -85,6 +102,7 @@ export default {
       //let's give +90 as default for country code
       countryCode: +90,
       telNo: "",
+      smsCode: "",
     };
   },
   methods: {
@@ -97,17 +115,33 @@ export default {
       this.isChecked = !this.isChecked;
       // console.log(this.isChecked);
     },
-    buttonControl: function (e) {
+    firstButtonControl: function (e) {
       e.preventDefault();
       //if the telNo part does not contain 10 digits
       if (this.telNo.toString().length != 10) {
         this.isActive = true;
-      } else {
+      } else if (this.telNo.toString().length == 10) {
         //if the number seems correct, remove the error message
         this.isActive = false;
         //show sms code input section
         this.userTelNoCorrect = true;
       }
+    },
+    secondButtonControl: function (e) {
+      e.preventDefault();
+
+      //check if the sms code is correct
+      //at this stage, I'm just using a length
+      //when the API i connected, it'll use a different logic
+      //so if the user does not have an account, direct him/her to the sign-up page
+      if (this.smsCode.toString().length != 4) {
+        // this.$router.push("Kayit");
+        console.log("routing?");
+        this.$router.push({ name: "Kayit" });
+      }
+      //if s/he has an account, open pop-up
+      // else {
+      // }
     },
   },
 };
