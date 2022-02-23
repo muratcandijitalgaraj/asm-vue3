@@ -111,6 +111,7 @@ export default {
   /* Primary */
 
   color: #3c4e69;
+  margin-bottom: 14px;
 }
 .modalText {
   width: 295px;
@@ -130,17 +131,36 @@ export default {
   /* Primary */
 
   color: #3c4e69;
+  margin-bottom: 60px;
 }
 .positiveBtn,
 .negativeBtn {
   width: 341px;
   height: 50px;
+  border: none;
   border-radius: 6px;
+  margin-bottom: 20px;
 }
 .positiveBtn {
   background: #ff7c32;
 }
 .negativeBtn {
   background: #2e95df;
+}
+.modalButtonText {
+  /* buton-text */
+
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 130%;
+  /* identical to box height, or 21px */
+
+  text-align: center;
+
+  /* Beyaz */
+
+  color: #ffffff;
 }
 </style>
