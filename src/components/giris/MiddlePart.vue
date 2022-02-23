@@ -18,7 +18,12 @@
             >
           </div>
         </div>
-        <input placeholder="Sms Kodunu Giriniz" type="text" class="input" />
+        <input
+          v-if="userTelNoCorrect"
+          placeholder="Sms Kodunu Giriniz"
+          type="text"
+          class="input"
+        />
 
         <div v-if="accountBelongsToUser" class="sifrePart">
           <div class="sifreContainer">
@@ -75,6 +80,7 @@ export default {
       isActive: false,
       isChecked: false,
       accountBelongsToUser: false,
+      userTelNoCorrect: false,
       //first click/telefon no
       //let's give +90 as default for country code
       countryCode: +90,
@@ -99,6 +105,8 @@ export default {
       } else {
         //if the number seems correct, remove the error message
         this.isActive = false;
+        //show sms code input section
+        this.userTelNoCorrect = true;
       }
     },
   },
