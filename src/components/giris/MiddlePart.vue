@@ -7,7 +7,11 @@
         <div class="telContainer">
           <input placeholder="+90" type="text" class="countryCode" />
           <div class="telefonNoContainer">
-            <input placeholder="Telefon Numaranız" type="text" class="telNo" />
+            <input
+              placeholder="Telefon Numaranız"
+              type="number"
+              class="telNo"
+            />
             <span v-bind:class="{ active: isActive }" class="errorMessage"
               >Geçerli bir telefon numarası yazın</span
             >
@@ -84,6 +88,7 @@ export default {
       this.isChecked = !this.isChecked;
       // console.log(this.isChecked);
     },
+    telNoControl: function () {},
   },
 };
 </script>
@@ -383,7 +388,6 @@ export default {
   // overflow: visible;
   margin-top: 30rem;
   // margin-bottom: 50px;
-  border: solid;
 }
 .checkboxImg {
   width: 15px;
