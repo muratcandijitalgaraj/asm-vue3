@@ -8,6 +8,7 @@
           <input placeholder="+90" type="text" class="countryCode" />
           <div class="telefonNoContainer">
             <input
+              v-model="telNo"
               placeholder="Telefon Numaranız"
               type="number"
               class="telNo"
@@ -17,6 +18,8 @@
             >
           </div>
         </div>
+        <input placeholder="Sms Kodunu Giriniz" type="text" class="input" />
+
         <div v-if="accountBelongsToUser" class="sifrePart">
           <div class="sifreContainer">
             <input placeholder="Şifreniz" type="text" class="sifre" />
@@ -50,7 +53,7 @@
           </div>
         </div>
 
-        <button @click="showError" class="tamamButton">Tamam</button>
+        <button @click="buttonControl" class="tamamButton">Tamam</button>
       </form>
       <div class="bulutPart">
         <div class="orta-bulut">
@@ -75,7 +78,7 @@ export default {
       //first click/telefon no
       //let's give +90 as default for country code
       countryCode: +90,
-      telNo: null,
+      telNo: "",
     };
   },
   methods: {
@@ -88,7 +91,16 @@ export default {
       this.isChecked = !this.isChecked;
       // console.log(this.isChecked);
     },
-    telNoControl: function () {},
+    buttonControl: function (e) {
+      e.preventDefault();
+      //if the telNo part does not contain 10 digits
+      if (this.telNo.toString().length != 10) {
+        this.isActive = true;
+      } else {
+        //if the number seems correct, remove the error message
+        this.isActive = false;
+      }
+    },
   },
 };
 </script>
@@ -208,6 +220,33 @@ export default {
   color: #818b9a;
   padding-left: 15px;
   margin-bottom: 0;
+}
+.input {
+  width: 468px;
+  height: 60px;
+  background: #ffffff;
+  /* Form Shadow */
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.03);
+  border-radius: 6px;
+  border: none;
+  padding: 0;
+  padding-left: 15px;
+
+  /* form-baslik */
+
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 100%;
+  /* identical to box height, or 16px */
+
+  letter-spacing: -0.01em;
+
+  /* Gri */
+
+  color: #818b9a;
+  margin-bottom: 25px;
 }
 .sifreContainer {
   width: 468px;
@@ -488,6 +527,9 @@ export default {
   }
   .telNo {
     width: 100%;
+  }
+  .input {
+    width: 300px;
   }
   .sifreContainer {
     display: flex;
