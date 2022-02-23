@@ -13,46 +13,43 @@
             >
           </div>
         </div>
-        <div class="sifreContainer">
-          <input placeholder="Şifreniz" type="text" class="sifre" />
-          <span v-bind:class="{ active: isActive }" class="errorMessage"
-            >Hatalı şifre girdiniz</span
-          >
-        </div>
-        <div class="loginActions">
-          <div class="checkboxContainer">
-            <div
-              v-bind:class="{ checked: isChecked }"
-              @click="handleCheck"
-              class="unChecked"
+        <div v-if="accountBelongsToUser" class="sifrePart">
+          <div class="sifreContainer">
+            <input placeholder="Şifreniz" type="text" class="sifre" />
+            <span v-bind:class="{ active: isActive }" class="errorMessage"
+              >Hatalı şifre girdiniz</span
             >
-              <img
-                src="../../assets/giris/checkImg.svg"
-                alt=""
-                class="checkboxImg"
-              />
-            </div>
-            <div @click="handleCheck" class="checkboxPara">Beni Hatırla</div>
           </div>
-          <div class="forgotContainer">
-            <img
-              src="../../assets/giris/flash-circle-1.svg"
-              alt=""
-              class="forgotLogo"
-            />
-            <div class="forgotPara">Şifremi Unuttum</div>
+          <div class="loginActions">
+            <div class="checkboxContainer">
+              <div
+                v-bind:class="{ checked: isChecked }"
+                @click="handleCheck"
+                class="unChecked"
+              >
+                <img
+                  src="../../assets/giris/checkImg.svg"
+                  alt=""
+                  class="checkboxImg"
+                />
+              </div>
+              <div @click="handleCheck" class="checkboxPara">Beni Hatırla</div>
+            </div>
+            <div class="forgotContainer">
+              <img
+                src="../../assets/giris/flash-circle-1.svg"
+                alt=""
+                class="forgotLogo"
+              />
+              <div class="forgotPara">Şifremi Unuttum</div>
+            </div>
           </div>
         </div>
+
         <button @click="showError" class="tamamButton">Tamam</button>
       </form>
       <div class="bulutPart">
         <div class="orta-bulut">
-          <!-- carousel will come here -->
-          <!-- <img
-            src="../../assets/giris/imageGroup-1.svg"
-            alt=""
-            class="imageGroup"
-          /> -->
           <div class="imageGroup">
             <Carousel />
           </div>
@@ -70,6 +67,11 @@ export default {
     return {
       isActive: false,
       isChecked: false,
+      accountBelongsToUser: false,
+      //first click/telefon no
+      //let's give +90 as default for country code
+      countryCode: +90,
+      telNo: null,
     };
   },
   methods: {
@@ -375,12 +377,13 @@ export default {
   @include flexCenter(column);
 }
 .imageGroup {
-  width: auto;
+  width: 100%;
   height: auto;
   //what's this overflow visible?
   // overflow: visible;
   margin-top: 30rem;
   // margin-bottom: 50px;
+  border: solid;
 }
 .checkboxImg {
   width: 15px;
