@@ -3,19 +3,15 @@
     <div class="logoBox">
       <img src="../../assets/anasayfa/tamamlandi.svg" alt="" class="logo" />
     </div>
-    <b-row class="d-flex justify-content-around cell no-gutters">
-      <!-- <b-col cols="12" lg="1" xl="1" md="12" class="container no-gutters mx-0">
-        <div class="logoBox">
-          <img src="../../assets/anasayfa/gorusme.svg" alt="" class="logo" />
-        </div>
-      </b-col> -->
-      <b-col cols="12" lg="6" xl="3" class="container">
+    <div class="row d-flex justify-content-around cell no-gutters">
+      <div class="col-12 col-lg-6 col-xl-3 colContainer">
         <div class="boxes firstBox">
           <div class="boxTitle redTitle">Görüşme Tamamlandı</div>
           <div class="boxPara">20 Ocak Pazartesi - 12:30</div>
-        </div></b-col
-      >
-      <b-col cols="12" lg="6" xl="4" class="container">
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6 col-xl-4 colContainer">
         <div class="boxContainer doktorContainer">
           <img src="../../assets/anasayfa/doktor.svg" alt="" class="doktor" />
           <!-- flex column -->
@@ -23,9 +19,9 @@
             <div class="boxTitle">Prof. Dr. Mehmet Ali Tahaoğlu</div>
             <div class="boxPara">Gögüs Hastalıkları</div>
           </div>
-        </div></b-col
-      >
-      <b-col cols="12" lg="12" xl="4" class="container">
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 col-xl-4 colContainer">
         <div class="boxContainer">
           <div class="greyBox">
             <img
@@ -37,9 +33,9 @@
           <div class="boxes">
             <div class="boxTitle greyTitle">Görüntülü Görüşme Randevusu</div>
           </div>
-        </div></b-col
-      >
-    </b-row>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -64,7 +60,7 @@ export default {};
   min-height: 110px;
   display: flex;
 }
-.container {
+.colContainer {
   height: 100px;
   height: auto;
   padding: 0;
@@ -199,7 +195,7 @@ export default {};
   }
 }
 @media (max-width: 1000px) {
-  .container {
+  .colContainer {
     margin-left: 1rem;
   }
   .doktorContainer {
