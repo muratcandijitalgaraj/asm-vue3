@@ -1,30 +1,24 @@
 <template>
-  <div class="container">
-    <div class="row d-flex justify-content-around cards">
-      <div class="col-12 col-lg-6 col-xl-3 card card1">
-        <img
-          src="../../assets/anasayfa/randevu-alin.svg"
-          alt=""
-          class="cardLogo"
-        />
-        <div class="cardPara">Hastane Randevusu Alın</div>
-      </div>
-      <div class="col-12 col-lg-6 col-xl-3 card card2">
-        <img
-          src="../../assets/anasayfa/goruntulu.svg"
-          alt=""
-          class="cardLogo"
-        />
-        <div class="cardPara">Görüntülü Görüşme Randevusu Alın</div>
-      </div>
-      <div class="col-12 col-lg-6 col-xl-3 card card3">
-        <img src="../../assets/anasayfa/check-up.svg" alt="" class="cardLogo" />
-        <div class="cardPara">Check-Up Başvurusu Yapın</div>
-      </div>
-      <div class="col-12 col-lg-6 col-xl-3 card card4">
-        <img src="../../assets/anasayfa/destek.svg" alt="" class="cardLogo" />
-        <div class="cardPara">Destek Merkezi</div>
-      </div>
+  <div class="row d-flex justify-content-around cards">
+    <div class="col-12 col-lg-6 col-xl-3 card card1">
+      <img
+        src="../../assets/anasayfa/randevu-alin.svg"
+        alt=""
+        class="cardLogo"
+      />
+      <div class="cardPara">Hastane Randevusu Alın</div>
+    </div>
+    <div class="col-12 col-lg-6 col-xl-3 card card2">
+      <img src="../../assets/anasayfa/goruntulu.svg" alt="" class="cardLogo" />
+      <div class="cardPara">Görüntülü Görüşme Randevusu Alın</div>
+    </div>
+    <div class="col-12 col-lg-6 col-xl-3 card card3">
+      <img src="../../assets/anasayfa/check-up.svg" alt="" class="cardLogo" />
+      <div class="cardPara">Check-Up Başvurusu Yapın</div>
+    </div>
+    <div class="col-12 col-lg-6 col-xl-3 card card4">
+      <img src="../../assets/anasayfa/destek.svg" alt="" class="cardLogo" />
+      <div class="cardPara">Destek Merkezi</div>
     </div>
   </div>
 </template>

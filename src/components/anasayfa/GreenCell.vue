@@ -1,16 +1,21 @@
 <template>
-  <div class="cellComponent">
+  <div class="greenCell">
     <div class="logoBox">
-      <img src="../../assets/anasayfa/gorusme.svg" alt="" class="logo" />
+      <img src="../../assets/anasayfa/tamamlandi.svg" alt="" class="logo" />
     </div>
-    <div class="row d-flex justify-content-around cell no-gutters">
-      <div class="col-12 col-lg-6 col-xl-3 colContainer">
-        <div class="boxes firstBox">
-          <div class="boxTitle redTitle">Görüşme Bekleniyor</div>
-          <div class="boxPara">20 Ocak Pazartesi - 12:30</div>
+    <b-row class="d-flex justify-content-around cell no-gutters">
+      <!-- <b-col cols="12" lg="1" xl="1" md="12" class="container no-gutters mx-0">
+        <div class="logoBox">
+          <img src="../../assets/anasayfa/gorusme.svg" alt="" class="logo" />
         </div>
-      </div>
-      <div class="col-12 col-lg-6 col-xl-4 colContainer">
+      </b-col> -->
+      <b-col cols="12" lg="6" xl="3" class="container">
+        <div class="boxes firstBox">
+          <div class="boxTitle redTitle">Görüşme Tamamlandı</div>
+          <div class="boxPara">20 Ocak Pazartesi - 12:30</div>
+        </div></b-col
+      >
+      <b-col cols="12" lg="6" xl="4" class="container">
         <div class="boxContainer doktorContainer">
           <img src="../../assets/anasayfa/doktor.svg" alt="" class="doktor" />
           <!-- flex column -->
@@ -18,9 +23,9 @@
             <div class="boxTitle">Prof. Dr. Mehmet Ali Tahaoğlu</div>
             <div class="boxPara">Gögüs Hastalıkları</div>
           </div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-6 col-xl-4 colContainer">
+        </div></b-col
+      >
+      <b-col cols="12" lg="12" xl="4" class="container">
         <div class="boxContainer">
           <div class="greyBox">
             <img
@@ -30,12 +35,11 @@
             />
           </div>
           <div class="boxes">
-            <div class="boxTitle greyTitle">Ataşehir Tıp Merkezi</div>
-            <div class="boxPara">Ataşehir Tıp Merkezi</div>
+            <div class="boxTitle greyTitle">Görüntülü Görüşme Randevusu</div>
           </div>
-        </div>
-      </div>
-    </div>
+        </div></b-col
+      >
+    </b-row>
   </div>
 </template>
 
@@ -44,7 +48,7 @@ export default {};
 </script>
 
 <style scoped>
-.cellComponent {
+.greenCell {
   display: flex;
   margin-left: 12px;
   background: #ffffff;
@@ -60,7 +64,7 @@ export default {};
   min-height: 110px;
   display: flex;
 }
-.colContainer {
+.container {
   height: 100px;
   height: auto;
   padding: 0;
@@ -69,7 +73,7 @@ export default {};
 .logoBox {
   width: 40px;
   height: 100px;
-  background: #ffeeee;
+  background: #e0fff0;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
@@ -106,6 +110,18 @@ export default {};
   font-size: 16px;
   line-height: 150%;
   /* identical to box height, or 24px */
+}
+.greyTitle {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+
+  /* Primary */
+
+  color: #3c4e69;
 }
 .boxPara {
   width: auto;
@@ -158,20 +174,8 @@ export default {};
   margin-right: 1rem;
 }
 
-.greyTitle {
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 150%;
-  /* identical to box height, or 24px */
-
-  /* Primary */
-
-  color: #3c4e69;
-}
 @media (max-width: 1200px) {
-  .cellComponent {
+  .greenCell {
     flex-direction: column;
   }
 
@@ -195,7 +199,7 @@ export default {};
   }
 }
 @media (max-width: 1000px) {
-  .colContainer {
+  .container {
     margin-left: 1rem;
   }
   .doktorContainer {
