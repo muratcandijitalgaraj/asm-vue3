@@ -3,37 +3,16 @@
     <div class="logoBox">
       <img src="../../assets/anasayfa/gorusme.svg" alt="" class="logo" />
     </div>
-    <div class="row d-flex justify-content-around cell no-gutters">
-      <div class="col-12 col-lg-6 col-xl-3 colContainer">
-        <div class="boxes firstBox">
-          <div class="boxTitle redTitle">Görüşme Bekleniyor</div>
-          <div class="boxPara">20 Ocak Pazartesi - 12:30</div>
+    <div class="container">
+      <div class="row cell">
+        <div
+          class="col box 1stBox d-flex flex-column justify-content-center align-items-start"
+        >
+          <div class="row colTitle redTitle">Görüşme Bekleniyor</div>
+          <div class="row colPara">20 Ocak Pazartesi - 12:30</div>
         </div>
-      </div>
-      <div class="col-12 col-lg-6 col-xl-4 colContainer">
-        <div class="boxContainer doktorContainer">
-          <img src="../../assets/anasayfa/doktor.svg" alt="" class="doktor" />
-          <!-- flex column -->
-          <div class="boxes">
-            <div class="boxTitle">Prof. Dr. Mehmet Ali Tahaoğlu</div>
-            <div class="boxPara">Gögüs Hastalıkları</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-6 col-xl-4 colContainer">
-        <div class="boxContainer">
-          <div class="greyBox">
-            <img
-              src="../../assets/anasayfa/hospital.svg"
-              alt=""
-              class="greyLogo"
-            />
-          </div>
-          <div class="boxes">
-            <div class="boxTitle greyTitle">Ataşehir Tıp Merkezi</div>
-            <div class="boxPara">Ataşehir Tıp Merkezi</div>
-          </div>
-        </div>
+        <div class="col box 2ndBox"></div>
+        <div class="col box 3rdBox"></div>
       </div>
     </div>
   </div>
@@ -56,15 +35,44 @@ export default {};
   height: auto;
 }
 .cell {
-  padding: 1rem;
-  min-height: 110px;
-  display: flex;
+  width: 100%;
+  height: 100%;
 }
-.colContainer {
-  height: 100px;
-  height: auto;
-  padding: 0;
-  margin: 0;
+.col {
+  height: 100%;
+}
+.box {
+  height: 100%;
+}
+.colTitle {
+  width: 225px;
+  height: 24px;
+  /* baslik4 */
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+  /* Primary */
+  color: #3c4e69;
+}
+.redTitle {
+  color: #ea5455;
+}
+.colPara {
+  width: 171px;
+  height: 21px;
+  /* text3 */
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 140%;
+  /* identical to box height, or 21px */
+  letter-spacing: -0.01em;
+  /* Primary */
+  color: #3c4e69;
 }
 .logoBox {
   width: 40px;
@@ -88,104 +96,10 @@ export default {};
   border-radius: 0px;
   margin: 0;
 }
-.boxes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-.boxTitle {
-  width: auto;
-  height: auto;
 
-  /* baslik4 */
-
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 150%;
-  /* identical to box height, or 24px */
-}
-.boxPara {
-  width: auto;
-  height: 21px;
-  /* text3 */
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 140%;
-  /* identical to box height, or 21px */
-  letter-spacing: -0.01em;
-  /* Primary */
-  color: #3c4e69;
-}
-.redTitle {
-  /* Kırmızı */
-  color: #ea5455;
-}
-.boxContainer {
-  display: flex;
-  width: auto;
-  justify-content: flex-end;
-  align-items: center;
-  min-height: auto;
-  height: 100%;
-  padding: 0;
-  margin-bottom: 2rem;
-}
-.doktor {
-  width: 50px;
-  height: 50px;
-  margin-right: 1rem;
-}
-.greyBox {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #f2f8fb;
-  border-radius: 5px;
-  margin-right: 15px;
-  /* this padding makes sure that the logo fits well */
-  padding: 10px;
-}
-.greyLogo {
-  width: 22px;
-  height: 22px;
-  margin-right: 1rem;
-}
-
-.greyTitle {
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 150%;
-  /* identical to box height, or 24px */
-
-  /* Primary */
-
-  color: #3c4e69;
-}
 @media (max-width: 1200px) {
   .cellComponent {
     flex-direction: column;
-  }
-
-  .boxContainer {
-    align-items: center;
-  }
-  .boxes {
-    /* align-items: center; */
-  }
-  .firstBox {
-    padding-left: 1rem;
-  }
-  .greyBox {
-    margin-left: 1rem;
   }
   .logoBox {
     width: 100%;
@@ -195,11 +109,5 @@ export default {};
   }
 }
 @media (max-width: 1000px) {
-  .colContainer {
-    margin-left: 1rem;
-  }
-  .doktorContainer {
-    margin-left: 1rem;
-  }
 }
 </style>
