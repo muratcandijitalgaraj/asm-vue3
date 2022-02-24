@@ -17,8 +17,8 @@
     >
       <img src="../../assets/anasayfa/doktor.svg" alt="" class="doktor" />
       <div>
-        <div class="row colTitle redTitle">Görüşme Bekleniyor</div>
-        <div class="row colPara">20 Ocak Pazartesi - 12:30</div>
+        <div class="row colTitle">Prof. Dr. Mehmet Ali Tahaoğlu</div>
+        <div class="row colPara">Gögüs Hastalıkları</div>
       </div>
     </div>
     <!-- third box -->
@@ -29,8 +29,8 @@
         <img src="../../assets/anasayfa/hospital.svg" alt="" class="greyLogo" />
       </div>
       <div>
-        <div class="row colTitle redTitle">Görüşme Bekleniyor</div>
-        <div class="row colPara">20 Ocak Pazartesi - 12:30</div>
+        <div class="row colTitle">Ataşehir Tıp Merkezi</div>
+        <div class="row colPara">Ataşehir Tıp Merkezi</div>
       </div>
     </div>
   </div>
