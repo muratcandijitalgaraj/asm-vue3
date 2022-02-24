@@ -88,7 +88,7 @@
     <!-- Button trigger modal -->
     <button
       type="button"
-      class="btn btn-primary clicky"
+      class="btn btn-primary triggerModal"
       data-bs-toggle="modal"
       data-bs-target="#staticBackdrop"
     >
@@ -188,7 +188,7 @@ export default {
       }
       //if s/he has an account, open pop-up
       else if (this.smsCode.toString().length == 4) {
-        document.querySelector(".clicky").click();
+        document.querySelector(".triggerModal").click();
       }
     },
     confirmaccountBelongsToUser: function (e) {
@@ -540,7 +540,7 @@ export default {
   background: #e9f3f9 !important;
   border-radius: 16px;
 }
-.clicky {
+.triggerModal {
   display: none;
 }
 .modalItemsContainer {
