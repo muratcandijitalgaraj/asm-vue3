@@ -28,7 +28,7 @@
 
         <div v-if="accountBelongsToUser" class="sifrePart">
           <div class="sifreContainer">
-            <input placeholder="Şifreniz" type="text" class="sifre" />
+            <input placeholder="Şifreniz" type="password" class="sifre" />
             <span v-bind:class="{ active: isActive }" class="errorMessage"
               >Hatalı şifre girdiniz</span
             >
@@ -120,7 +120,11 @@
             >
               <div class="modalButtonText">Evet, bu hesap bana ait</div>
             </button>
-            <button class="negativeBtn">
+            <button
+              data-bs-dismiss="modal"
+              @click="accountDoesNotBelongToUser"
+              class="negativeBtn"
+            >
               <div class="modalButtonText">Hayır, hesap bana ait değil</div>
             </button>
           </div>
@@ -190,6 +194,10 @@ export default {
     confirmaccountBelongsToUser: function (e) {
       e.preventDefault();
       this.accountBelongsToUser = true;
+    },
+    accountDoesNotBelongToUser: function (e) {
+      e.preventDefault();
+      this.$router.push({ name: "Kayit" });
     },
   },
 };
