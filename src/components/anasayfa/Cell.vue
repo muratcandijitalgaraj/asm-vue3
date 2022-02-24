@@ -5,7 +5,7 @@
     </div>
     <!-- first box -->
     <div
-      class="col box 1stBox d-flex flex-column justify-content-center align-items-start"
+      class="col col-lg-3 box firstBox d-flex flex-column justify-content-center align-items-start"
     >
       <div class="row colTitle redTitle">Görüşme Bekleniyor</div>
       <div class="row colPara">20 Ocak Pazartesi - 12:30</div>
@@ -61,6 +61,9 @@ export default {};
 .box {
   height: 100%;
 }
+.firstBox {
+  padding-left: 1rem;
+}
 .colTitle {
   width: 225px;
   height: 24px;
@@ -94,7 +97,7 @@ export default {};
 .doktor {
   width: 50px;
   height: 50px;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 .logoBox {
   width: 40px;
@@ -126,7 +129,7 @@ export default {};
   justify-content: center;
   background: #f2f8fb;
   border-radius: 5px;
-  margin-right: 15px;
+  margin-right: 1.5rem;
   /* this padding makes sure that the logo fits well */
   padding: 10px;
 }
@@ -146,6 +149,13 @@ export default {};
     height: auto;
     padding: 10px;
     margin: 0;
+  }
+  .box {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+  .firstBox {
+    margin-left: 5.5rem;
   }
 }
 @media (max-width: 1000px) {
