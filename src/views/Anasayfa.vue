@@ -15,7 +15,7 @@
 
       <div class="row greyPart">
         <div class="col-3 sideBar">
-          <!-- <SideBar /> -->
+          <SideBar />
         </div>
 
         <div class="col rightPart">
@@ -32,7 +32,7 @@
 
           <div class="row randevular">
             <div class="col">
-              <!-- <Randevulariniz /> -->
+              <Randevulariniz />
             </div>
           </div>
 
@@ -43,7 +43,7 @@
 
           <div class="row muayeneler">
             <div class="col">
-              <!-- <Muayeneler /> -->
+              <Muayeneler />
             </div>
           </div>
 
@@ -59,14 +59,23 @@
 <script>
 /* eslint-disable vue/no-unused-components */
 import Header from "../components/anasayfa/Header.vue";
+import SideBar from "../components/anasayfa/SideBar.vue";
+// import SideBarTop from "../components/anasayfa/SideBarTop.vue";
 
 import Cards from "../components/anasayfa/Cards.vue";
+import Randevulariniz from "../components/anasayfa/Randevulariniz.vue";
+import Muayeneler from "../components/anasayfa/Muayeneler.vue";
+// import Footer from "../components/Footer.vue";
 
 export default {
   components: {
     Header,
-
+    SideBar,
+    // SideBarTop,
     Cards,
+    Randevulariniz,
+    Muayeneler,
+    // Footer,
   },
 };
 </script>
