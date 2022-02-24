@@ -3,7 +3,7 @@
   <!-- Button trigger modal -->
   <button
     type="button"
-    class="btn btn-primary"
+    class="btn btn-primary clicky"
     data-bs-toggle="modal"
     data-bs-target="#staticBackdrop"
   >
@@ -31,7 +31,9 @@
             kayıtlıdır
           </div>
           <button class="positiveBtn">
-            <div class="modalButtonText">Evet, bu hesap bana ait</div>
+            <div class="modalButtonText" data-bs-dismiss="modal">
+              Evet, bu hesap bana ait
+            </div>
           </button>
           <button class="negativeBtn">
             <div class="modalButtonText">Hayır, hesap bana ait değil</div>
@@ -74,6 +76,7 @@ export default {
     } catch (err) {
       console.log(err);
     }
+    document.querySelector(".clicky").click();
   },
 };
 </script>
@@ -83,8 +86,11 @@ export default {
   width: 470px;
   height: 571px;
 
-  background: #e9f3f9;
+  background: #e9f3f9 !important;
   border-radius: 16px;
+}
+.clicky {
+  display: none;
 }
 .modalItemsContainer {
   display: flex;
