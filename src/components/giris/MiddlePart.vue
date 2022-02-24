@@ -95,9 +95,7 @@
       Launch static backdrop modal
     </button>
 
-    <!-- Modal 
-  shall add this later on
-    data-bs-backdrop="static"-->
+    <!-- Modal -->
     <div
       class="modal fade"
       id="staticBackdrop"
@@ -115,10 +113,12 @@
               Girmiş olduğunuz 0555 666 77 88 telefon numarası A** Y***** adına
               kayıtlıdır
             </div>
-            <button class="positiveBtn">
-              <div class="modalButtonText" data-bs-dismiss="modal">
-                Evet, bu hesap bana ait
-              </div>
+            <button
+              class="positiveBtn"
+              data-bs-dismiss="modal"
+              @click="confirmaccountBelongsToUser"
+            >
+              <div class="modalButtonText">Evet, bu hesap bana ait</div>
             </button>
             <button class="negativeBtn">
               <div class="modalButtonText">Hayır, hesap bana ait değil</div>
@@ -186,6 +186,10 @@ export default {
       else if (this.smsCode.toString().length == 4) {
         document.querySelector(".clicky").click();
       }
+    },
+    confirmaccountBelongsToUser: function (e) {
+      e.preventDefault();
+      this.accountBelongsToUser = true;
     },
   },
 };
