@@ -1,24 +1,24 @@
 <template>
-  <div class="MuayeneCell">
-
-      <div class="row d-flex justify-content-around cell no-gutters ">
-          <div class="col-12 col-lg-6 col-xl-4 colContainer firstBox">
- <div class="boxes">
+  <div class="muayeneCell">
+    <div class="row d-flex justify-content-around cell no-gutters">
+      <div class="col-12 col-lg-6 col-xl-4 colContainer firstBox">
+        <div class="boxes">
           <div class="boxTitle redTitle">20 OCAK 2021 - 12:30</div>
           <div class="boxPara">Ataşehir Tıp Merkezi</div>
-        </div> 
- <div class="col-12 col-lg-6 col-xl-4 colContainer doktorContainer">
-    <div class="boxContainer">
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 col-xl-4 colContainer doktorContainer">
+        <div class="boxContainer">
           <img src="../../assets/anasayfa/doktor.svg" alt="" class="doktor" />
           <!-- flex column -->
           <div class="boxes">
             <div class="boxTitle">Prof. Dr. Mehmet Ali Tahaoğlu</div>
             <div class="boxPara">Gögüs Hastalıkları</div>
           </div>
-        </div> 
-          </div>
- <div class="col-12 col-lg-6 col-xl-4 colContainer ">
-   <div class="boxContainer">
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 col-xl-4 colContainer">
+        <div class="boxContainer">
           <div class="icons">
             <div class="iconGroup">
               <img src="../../assets/anasayfa/lab.svg" alt="" class="icon" />
@@ -45,49 +45,43 @@
               <div class="iconPara">Reçete</div>
             </div>
           </div>
-        </div> 
+        </div>
+      </div>
       <div class="greyLine"></div>
-
-      </div>
-
-
-
-      </div>
-
-      <div class="row bottomPart">
-<div class="col-12 col-md-6 bottomPara d-flex justify-content-start">
-<div class="row bottomParaRow">
-    <div class="col-12 col-md-6 col-lg-6 paraItemContainer">
- <div class="paraItem">
-                <img
-                  src="../../assets/anasayfa/star.svg"
-                  alt=""
-                  class="paraIcon icon"
-                />
-                <div class="paraItemText">Puan Ver</div>
-              </div>
-
-
     </div>
 
-
-</div>
-
-<div class="col-12 col-md-6 bottomButton d-flex justify-content-end">
-<button class="btn">
-            <p class="buttonPara">Randevu Alın</p>
-          </button>
-
-</div>
-
-</div>
-
-
-
-
+    <div class="row bottomPart">
+      <div class="col-12 col-md-6 bottomPara d-flex justify-content-start">
+        <div class="row bottomParaRow">
+          <div class="col-12 col-md-6 col-lg-6 paraItemContainer">
+            <div class="paraItem">
+              <img
+                src="../../assets/anasayfa/star.svg"
+                alt=""
+                class="paraIcon icon"
+              />
+              <div class="paraItemText">Puan Ver</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 paraItemContainer">
+        <div class="paraItem">
+          <img
+            src="../../assets/anasayfa/story.svg"
+            alt=""
+            class="paraIcon icon"
+          />
+          <div class="paraItemText">Ankete Katıl</div>
+        </div>
       </div>
 
-    
+      <div class="col-12 col-md-6 bottomButton d-flex justify-content-end">
+        <button class="btn">
+          <p class="buttonPara">Randevu Alın</p>
+        </button>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -96,7 +90,7 @@ export default {};
 </script>
 
 <style scoped>
-.MuayeneCell {
+.muayeneCell {
   display: flex;
   margin-left: 12px;
   background: #ffffff;
@@ -382,7 +376,7 @@ export default {};
 }
 
 @media (max-width: 1200px) {
-  .MuayeneCell {
+  .muayeneCell {
     flex-direction: column;
   }
 

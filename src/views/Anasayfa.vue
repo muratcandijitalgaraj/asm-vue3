@@ -27,7 +27,7 @@
 
           <div class="row texts">
             <div class="col title">Randevularınız</div>
-            <div class="col">Hepsini Göster</div>
+            <div class="col para">Hepsini Göster</div>
           </div>
 
           <div class="row randevular">
@@ -38,7 +38,7 @@
 
           <div class="row texts">
             <div class="col title">Son Muayeneler</div>
-            <div class="col">Hepsini Göster</div>
+            <div class="col para">Hepsini Göster</div>
           </div>
 
           <div class="row muayeneler">
