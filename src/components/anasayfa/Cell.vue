@@ -1,20 +1,31 @@
 <template>
-  <div class="cellComponent">
+  <div class="cellComponent row">
     <div class="logoBox">
       <img src="../../assets/anasayfa/gorusme.svg" alt="" class="logo" />
     </div>
-    <div class="container">
-      <div class="row cell">
-        <div
-          class="col box 1stBox d-flex flex-column justify-content-center align-items-start"
-        >
-          <div class="row colTitle redTitle">Görüşme Bekleniyor</div>
-          <div class="row colPara">20 Ocak Pazartesi - 12:30</div>
-        </div>
-        <div class="col box 2ndBox"></div>
-        <div class="col box 3rdBox"></div>
-      </div>
+    <!-- first box -->
+    <div
+      class="col box 1stBox d-flex flex-column justify-content-center align-items-start"
+    >
+      <div class="row colTitle redTitle">Görüşme Bekleniyor</div>
+      <div class="row colPara">20 Ocak Pazartesi - 12:30</div>
     </div>
+    <div
+      class="col box 1stBox d-flex flex-column justify-content-center align-items-start"
+    >
+      <div class="row colTitle redTitle">Görüşme Bekleniyor</div>
+      <div class="row colPara">20 Ocak Pazartesi - 12:30</div>
+    </div>
+    <div
+      class="col box 1stBox d-flex flex-column justify-content-center align-items-start"
+    >
+      <div class="row colTitle redTitle">Görüşme Bekleniyor</div>
+      <div class="row colPara">20 Ocak Pazartesi - 12:30</div>
+    </div>
+
+    <!-- second box -->
+
+    <!-- third box -->
   </div>
 </template>
 
@@ -35,7 +46,7 @@ export default {};
   height: auto;
 }
 .cell {
-  width: 100%;
+  width: auto;
   height: 100%;
 }
 .col {
