@@ -43,10 +43,22 @@
       </div>
       <!-- first row ends -->
       <div class="row greyLineRow">
-        <div class="greyLine col-10"></div>
+        <div class="greyLine col-12"></div>
       </div>
       <!-- grey line row ends -->
-      <div class="row">lol</div>
+
+      <div class="row bottomPartRow">
+        <div class="col-12 col-md-6 bottomPara">
+          Ödemenizi yaptığınızda randevunuz aktif hale gelecektir.
+        </div>
+        <div
+          class="col-12 col-md-6 buttonContainer d-flex justify-content-md-end justify-content-start"
+        >
+          <button class="bottomButton">
+            <div class="buttonPara">241 TL Ödeme Yapın</div>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -75,7 +87,6 @@ export default {};
 }
 .colContainer {
   height: auto !important;
-  border: solid;
 }
 .row {
   height: 100%;
@@ -163,24 +174,82 @@ export default {};
   margin-right: 1rem;
 }
 .greyLineRow {
+  /* align-items: center; */
+  height: auto !important;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  border: solid;
-  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  margin-right: 2% !important;
 }
 .greyLine {
-  height: 10px !important;
-  width: 90% !important;
+  height: 1px !important;
+  width: 95% !important;
   background: #dae9f1;
   margin-top: 20px;
   margin-bottom: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
+.bottomButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 20px 11px;
+
+  width: 250px !important;
+  height: 40px !important;
+
+  /* Button Primary */
+
+  background: #ff7c32;
+  border: none;
+
+  border-radius: 6px;
+}
+.bottomPara {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 140%;
+  /* identical to box height, or 21px */
+
+  letter-spacing: -0.01em;
+
+  /* Gri */
+
+  color: #818b9a;
+  padding-left: 1.2rem;
+}
+.buttonPara {
+  /* buton-text-kucuk */
+
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 110%;
+  /* identical to box height, or 17px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Beyaz */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
+}
+.buttonContainer {
+  height: 43px !important;
+}
 @media (max-width: 1200px) {
   .tallCell {
     flex-direction: column;
@@ -202,4 +271,12 @@ export default {};
 }
 @media (max-width: 1000px) {
 }
+
+/* @media (max-width: 768px) {
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    border: solid;
+  }
+} */
 </style>
