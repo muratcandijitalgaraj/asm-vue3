@@ -25,7 +25,7 @@
         </div>
         <!-- third box -->
         <div
-          class="col col-sm-12 col-md-12 col-lg-12 col-xl-5 box 1stBox d-flex flex-row justify-content-start align-items-center"
+          class="col col-sm-12 col-md-12 col-lg-12 col-xl-5 box 1stBox d-flex flex-row justify-content-xl-center justify-content-start align-items-center"
         >
           <div class="greyBox">
             <img
