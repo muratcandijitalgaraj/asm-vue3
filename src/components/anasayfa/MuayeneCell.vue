@@ -57,13 +57,22 @@
 
       <div class="row bottomPartRow">
         <div class="col-12 col-md-6 bottomPara d-flex align-items-center">
-          Ödemenizi yaptığınızda randevunuz aktif hale gelecektir.
+          <div class="bottomIcons d-flex">
+            <div class="puanGroup d-flex">
+              <img src="../../assets/anasayfa/star.svg" alt="" />
+              <div class="IconPara">Puan Ver</div>
+            </div>
+            <div class="puanGroup d-flex">
+              <img src="../../assets/anasayfa/story.svg" alt="" />
+              <div class="IconPara">Ankete Katıl</div>
+            </div>
+          </div>
         </div>
         <div
           class="col-12 col-md-6 buttonContainer d-flex justify-content-md-end justify-content-start"
         >
           <button class="bottomButton">
-            <div class="buttonPara">241 TL Ödeme Yapın</div>
+            <div class="buttonPara">Randevu Alın</div>
           </button>
         </div>
       </div>
@@ -289,6 +298,17 @@ export default {};
 .buttonContainer {
   height: 43px !important;
   padding-right: 5%;
+}
+.bottomIcons {
+  margin-left: 0.8rem;
+}
+.puanGroup {
+  margin-right: 2rem;
+}
+.IconPara {
+  margin-left: 0.5rem;
+}
+.IconPara {
 }
 @media (max-width: 1400px) {
   .doktorTitle {
