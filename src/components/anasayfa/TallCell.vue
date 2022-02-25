@@ -15,28 +15,31 @@
 
         <!-- second box -->
         <div
-          class="col col-sm-12 col-md-12 col-lg-12 col-xl-4 box 1stBox d-flex flex-row justify-content-start align-items-center"
+          class="col col-sm-12 col-md-12 col-lg-12 col-xl-4 box secondBox d-flex flex-row justify-content-start align-items-center"
         >
           <img src="../../assets/anasayfa/doktor.svg" alt="" class="doktor" />
           <div>
-            <div class="row colTitle">Prof. Dr. Mehmet Ali Tahaoğlu</div>
+            <div class="row doktorTitle colTitle">
+              Prof. Dr. Mehmet Ali Tahaoğlu
+            </div>
             <div class="row colPara">Gögüs Hastalıkları</div>
           </div>
         </div>
         <!-- third box -->
         <div
-          class="col col-sm-12 col-md-12 col-lg-12 col-xl-5 box 1stBox d-flex flex-row justify-content-xl-center justify-content-start align-items-center"
+          class="col col-sm-12 col-md-12 col-lg-12 col-xl-5 box thirdBox d-flex flex-row justify-content-xl-center justify-content-start align-items-center"
         >
           <div class="greyBox">
             <img
-              src="../../assets/anasayfa/hospital.svg"
+              src="../../assets/anasayfa/video.svg"
               alt=""
               class="greyLogo"
             />
           </div>
           <div>
-            <div class="row colTitle">Ataşehir Tıp Merkezi</div>
-            <div class="row colPara">Ataşehir Tıp Merkezi</div>
+            <div class="row thirdBoxTitle colTitle">
+              Görüntülü Görüşme Randevusu
+            </div>
           </div>
         </div>
         <!-- third box ends -->
@@ -101,7 +104,7 @@ export default {};
   padding-left: 2rem;
 }
 .colTitle {
-  width: 225px;
+  width: auto;
   height: 24px;
   /* baslik4 */
   font-family: Nunito Sans;
@@ -115,6 +118,12 @@ export default {};
 }
 .redTitle {
   color: #ea5455;
+}
+.thirdBox {
+}
+.thirdBoxTitle {
+  width: 148px;
+  height: auto;
 }
 .colPara {
   width: 171px;
@@ -271,6 +280,13 @@ export default {};
   }
   .firstBox {
     /* margin-left: 5.5rem; */
+  }
+  .bottomPartRow {
+    padding-left: 2rem;
+  }
+  .bottomPara,
+  .buttonContainer {
+    margin-bottom: 2rem;
   }
 }
 @media (max-width: 1000px) {
