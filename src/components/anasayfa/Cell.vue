@@ -4,10 +4,10 @@
       <img src="../../assets/anasayfa/gorusme.svg" alt="" class="logo" />
     </div>
     <div class="container">
-      <div class="row">
+      <div class="row colContainer">
         <!-- first box -->
         <div
-          class="col col-lg-3 box firstBox d-flex flex-column justify-content-center align-items-start"
+          class="col col-sm-12 col-md-12 col-lg-12 col-xl-3 box firstBox d-flex flex-column justify-content-center align-items-start"
         >
           <div class="row colTitle redTitle">Görüşme Bekleniyor</div>
           <div class="row colPara">20 Ocak Pazartesi - 12:30</div>
@@ -15,7 +15,7 @@
 
         <!-- second box -->
         <div
-          class="col box 1stBox d-flex flex-row justify-content-start align-items-center"
+          class="col col-sm-12 col-md-12 col-lg-12 col-xl-4 box 1stBox d-flex flex-row justify-content-start align-items-center"
         >
           <img src="../../assets/anasayfa/doktor.svg" alt="" class="doktor" />
           <div>
@@ -25,7 +25,7 @@
         </div>
         <!-- third box -->
         <div
-          class="col box 1stBox d-flex flex-row justify-content-start align-items-center"
+          class="col col-sm-12 col-md-12 col-lg-12 col-xl-5 box 1stBox d-flex flex-row justify-content-start align-items-center"
         >
           <div class="greyBox">
             <img
@@ -60,6 +60,12 @@ export default {};
   margin-top: 20px;
   height: 110px;
 }
+.container {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.colContainer {
+}
 .row {
   height: 100%;
 }
@@ -70,7 +76,7 @@ export default {};
   height: 100%;
 }
 .firstBox {
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 .colTitle {
   width: 225px;

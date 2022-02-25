@@ -1,10 +1,10 @@
 <template>
-  <div class="tallCell">
+  <div class="cellComponent">
     <div class="logoBox">
       <img src="../../assets/anasayfa/gorusme.svg" alt="" class="logo" />
     </div>
     <div class="container">
-      <div class="sth row">
+      <div class="row">
         <!-- first box -->
         <div
           class="col col-lg-3 box firstBox d-flex flex-column justify-content-center align-items-start"
@@ -40,7 +40,6 @@
           </div>
         </div>
       </div>
-      <div class="greyLine row"></div>
     </div>
   </div>
 </template>
@@ -50,7 +49,7 @@ export default {};
 </script>
 
 <style scoped>
-.tallCell {
+.cellComponent {
   display: flex;
   margin-left: 12px;
   background: #ffffff;
@@ -59,12 +58,7 @@ export default {};
   border-radius: 10px;
   margin-bottom: 20px;
   margin-top: 20px;
-  height: 180px;
-}
-.sth {
-  display: flex;
-  width: 100%;
-  height: 100%;
+  height: 110px;
 }
 .row {
   height: 100%;
@@ -108,13 +102,6 @@ export default {};
   /* Primary */
   color: #3c4e69;
 }
-.greyLine {
-  height: 1px;
-  width: 95%;
-  background: #dae9f1;
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
 .doktor {
   width: 50px;
   height: 50px;
@@ -122,8 +109,8 @@ export default {};
 }
 .logoBox {
   width: 40px;
-  height: 170px;
-  background: #fff9f0;
+  height: 100px;
+  background: #ffeeee;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
@@ -131,6 +118,7 @@ export default {};
   align-items: center;
   padding: 0;
   margin-right: 20px;
+
   align-self: center;
   margin-left: 5px;
 }
@@ -160,7 +148,7 @@ export default {};
 }
 
 @media (max-width: 1200px) {
-  .tallCell {
+  .cellComponent {
     flex-direction: column;
     height: 100%;
   }
