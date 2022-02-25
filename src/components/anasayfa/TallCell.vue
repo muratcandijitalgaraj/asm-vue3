@@ -1,5 +1,5 @@
 <template>
-  <div class="cellComponent">
+  <div class="tallCell">
     <div class="logoBox">
       <img src="../../assets/anasayfa/gorusme.svg" alt="" class="logo" />
     </div>
@@ -41,7 +41,7 @@ export default {};
 </script>
 
 <style scoped>
-.cellComponent {
+.tallCell {
   display: flex;
   margin-left: 12px;
   background: #ffffff;
@@ -50,7 +50,7 @@ export default {};
   border-radius: 10px;
   margin-bottom: 20px;
   margin-top: 20px;
-  height: 110px;
+  height: 180px;
 }
 .row {
   height: 100%;
@@ -101,8 +101,8 @@ export default {};
 }
 .logoBox {
   width: 40px;
-  height: 100px;
-  background: #ffeeee;
+  height: 170px;
+  background: #fff9f0;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
@@ -110,7 +110,6 @@ export default {};
   align-items: center;
   padding: 0;
   margin-right: 20px;
-
   align-self: center;
   margin-left: 5px;
 }
@@ -120,6 +119,13 @@ export default {};
   /* margin-left: 1rem; */
   border-radius: 0px;
   margin: 0;
+}
+.greyLine {
+  height: 1px;
+  width: 95%;
+  background: #dae9f1;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 .greyBox {
   width: 50px;
@@ -140,7 +146,7 @@ export default {};
 }
 
 @media (max-width: 1200px) {
-  .cellComponent {
+  .tallCell {
     flex-direction: column;
     height: 100%;
   }
