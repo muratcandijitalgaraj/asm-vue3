@@ -1,7 +1,7 @@
 <template>
   <div class="tallCell">
     <div class="logoBox">
-      <img src="../../assets/anasayfa/gorusme.svg" alt="" class="logo" />
+      <img src="../../assets/anasayfa/odeme.svg" alt="" class="logo" />
     </div>
     <div class="container d-flex flex-column justify-content-center">
       <div class="row colContainer">
@@ -9,7 +9,7 @@
         <div
           class="col col-sm-12 col-md-12 col-lg-12 col-xl-3 box firstBox d-flex flex-column justify-content-center align-items-start"
         >
-          <div class="row colTitle redTitle">Görüşme Bekleniyor</div>
+          <div class="row colTitle orangeTitle">Ödeme Bekleniyor</div>
           <div class="row colPara">20 Ocak Pazartesi - 12:30</div>
         </div>
 
@@ -116,8 +116,8 @@ export default {};
   /* Primary */
   color: #3c4e69;
 }
-.redTitle {
-  color: #ea5455;
+.orangeTitle {
+  color: #ff8038;
 }
 .thirdBox {
 }

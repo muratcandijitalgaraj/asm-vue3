@@ -1,28 +1,34 @@
 <template>
-  <div class="greenCell">
+  <div class="cellComponent">
     <div class="logoBox">
       <img src="../../assets/anasayfa/tamamlandi.svg" alt="" class="logo" />
     </div>
-    <div class="row d-flex justify-content-around cell no-gutters">
-      <div class="col-12 col-lg-6 col-xl-3 colContainer">
-        <div class="boxes firstBox">
-          <div class="boxTitle redTitle">Görüşme Tamamlandı</div>
-          <div class="boxPara">20 Ocak Pazartesi - 12:30</div>
+    <div class="container">
+      <div class="row colContainer">
+        <!-- first box -->
+        <div
+          class="col col-sm-12 col-md-12 col-lg-12 col-xl-3 box firstBox d-flex flex-column justify-content-center align-items-start"
+        >
+          <div class="row colTitle greenTitle">Görüşme Bekleniyor</div>
+          <div class="row colPara">20 Ocak Pazartesi - 12:30</div>
         </div>
-      </div>
 
-      <div class="col-12 col-lg-6 col-xl-4 colContainer">
-        <div class="boxContainer doktorContainer">
+        <!-- second box -->
+        <div
+          class="col col-sm-12 col-md-12 col-lg-12 col-xl-4 box secondBox d-flex flex-row justify-content-start align-items-center"
+        >
           <img src="../../assets/anasayfa/doktor.svg" alt="" class="doktor" />
-          <!-- flex column -->
-          <div class="boxes">
-            <div class="boxTitle">Prof. Dr. Mehmet Ali Tahaoğlu</div>
-            <div class="boxPara">Gögüs Hastalıkları</div>
+          <div>
+            <div class="row doktorTitle colTitle">
+              Prof. Dr. Mehmet Ali Tahaoğlu
+            </div>
+            <div class="row colPara">Gögüs Hastalıkları</div>
           </div>
         </div>
-      </div>
-      <div class="col-12 col-lg-6 col-xl-4 colContainer">
-        <div class="boxContainer">
+        <!-- third box -->
+        <div
+          class="col col-sm-12 col-md-12 col-lg-12 col-xl-5 box thirdBox d-flex flex-row justify-content-xl-center justify-content-start align-items-center"
+        >
           <div class="greyBox">
             <img
               src="../../assets/anasayfa/hospital.svg"
@@ -30,8 +36,8 @@
               class="greyLogo"
             />
           </div>
-          <div class="boxes">
-            <div class="boxTitle greyTitle">Görüntülü Görüşme Randevusu</div>
+          <div class="row thirdBoxTitle colTitle">
+            Görüntülü Görüşme Randevusu
           </div>
         </div>
       </div>
@@ -44,7 +50,7 @@ export default {};
 </script>
 
 <style scoped>
-.greenCell {
+.cellComponent {
   display: flex;
   margin-left: 12px;
   background: #ffffff;
@@ -53,18 +59,64 @@ export default {};
   border-radius: 10px;
   margin-bottom: 20px;
   margin-top: 20px;
-  height: auto;
+  height: 110px;
 }
-.cell {
-  padding: 1rem;
-  min-height: 110px;
-  display: flex;
+.container {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 .colContainer {
-  height: 100px;
+}
+.row {
+  height: 100%;
+}
+.col {
+  height: 100% !important;
+}
+.box {
+  height: 100%;
+}
+.firstBox {
+  padding-left: 2rem;
+}
+.colTitle {
+  width: auto;
+  height: 24px;
+  /* baslik4 */
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+  /* Primary */
+  color: #3c4e69;
+}
+.greenTitle {
+  color: #29a87b;
+}
+.thirdBoxTitle {
+  width: 148px;
   height: auto;
-  padding: 0;
-  margin: 0;
+}
+.colPara {
+  width: auto;
+  height: 21px;
+  /* text3 */
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 140%;
+  /* identical to box height, or 21px */
+  letter-spacing: -0.01em;
+  /* Primary */
+  color: #3c4e69;
+}
+.doktor {
+  width: 50px;
+  height: 50px;
+  margin-right: 1.5rem;
 }
 .logoBox {
   width: 40px;
@@ -88,70 +140,6 @@ export default {};
   border-radius: 0px;
   margin: 0;
 }
-.boxes {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
-.boxTitle {
-  width: auto;
-  height: auto;
-
-  /* baslik4 */
-
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 150%;
-  /* identical to box height, or 24px */
-}
-.greyTitle {
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 150%;
-  /* identical to box height, or 24px */
-
-  /* Primary */
-
-  color: #3c4e69;
-}
-.boxPara {
-  width: auto;
-  height: 21px;
-  /* text3 */
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 140%;
-  /* identical to box height, or 21px */
-  letter-spacing: -0.01em;
-  /* Primary */
-  color: #3c4e69;
-}
-.redTitle {
-  /* Kırmızı */
-  color: #ea5455;
-}
-.boxContainer {
-  display: flex;
-  width: auto;
-  justify-content: flex-end;
-  align-items: center;
-  min-height: auto;
-  height: 100%;
-  padding: 0;
-  margin-bottom: 2rem;
-}
-.doktor {
-  width: 50px;
-  height: 50px;
-  margin-right: 1rem;
-}
 .greyBox {
   width: 50px;
   height: 50px;
@@ -160,7 +148,7 @@ export default {};
   justify-content: center;
   background: #f2f8fb;
   border-radius: 5px;
-  margin-right: 15px;
+  margin-right: 1.5rem;
   /* this padding makes sure that the logo fits well */
   padding: 10px;
 }
@@ -169,23 +157,15 @@ export default {};
   height: 22px;
   margin-right: 1rem;
 }
-
+@media (max-width: 1400px) {
+  .doktorTitle {
+    margin-bottom: 1.3rem;
+  }
+}
 @media (max-width: 1200px) {
-  .greenCell {
+  .cellComponent {
     flex-direction: column;
-  }
-
-  .boxContainer {
-    align-items: center;
-  }
-  .boxes {
-    /* align-items: center; */
-  }
-  .firstBox {
-    padding-left: 1rem;
-  }
-  .greyBox {
-    margin-left: 1rem;
+    height: 100%;
   }
   .logoBox {
     width: 100%;
@@ -193,13 +173,17 @@ export default {};
     padding: 10px;
     margin: 0;
   }
+  .box {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+  .doktorTitle {
+    margin-bottom: 0;
+  }
+  .firstBox {
+    /* margin-left: 5.5rem; */
+  }
 }
 @media (max-width: 1000px) {
-  .colContainer {
-    margin-left: 1rem;
-  }
-  .doktorContainer {
-    margin-left: 1rem;
-  }
 }
 </style>
