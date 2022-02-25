@@ -51,7 +51,7 @@
       <!-- grey line row ends -->
 
       <div class="row bottomPartRow">
-        <div class="col-12 col-md-6 bottomPara">
+        <div class="col-12 col-md-6 bottomPara d-flex align-items-center">
           Ödemenizi yaptığınızda randevunuz aktif hale gelecektir.
         </div>
         <div
@@ -226,7 +226,6 @@ export default {};
   font-size: 15px;
   line-height: 140%;
   /* identical to box height, or 21px */
-
   letter-spacing: -0.01em;
 
   /* Gri */
