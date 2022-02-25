@@ -3,34 +3,42 @@
     <div class="logoBox">
       <img src="../../assets/anasayfa/gorusme.svg" alt="" class="logo" />
     </div>
-    <!-- first box -->
-    <div
-      class="col col-lg-3 box firstBox d-flex flex-column justify-content-center align-items-start"
-    >
-      <div class="row colTitle redTitle">Görüşme Bekleniyor</div>
-      <div class="row colPara">20 Ocak Pazartesi - 12:30</div>
-    </div>
+    <div class="container">
+      <div class="row">
+        <!-- first box -->
+        <div
+          class="col col-lg-3 box firstBox d-flex flex-column justify-content-center align-items-start"
+        >
+          <div class="row colTitle redTitle">Görüşme Bekleniyor</div>
+          <div class="row colPara">20 Ocak Pazartesi - 12:30</div>
+        </div>
 
-    <!-- second box -->
-    <div
-      class="col box 1stBox d-flex flex-row justify-content-start align-items-center"
-    >
-      <img src="../../assets/anasayfa/doktor.svg" alt="" class="doktor" />
-      <div>
-        <div class="row colTitle">Prof. Dr. Mehmet Ali Tahaoğlu</div>
-        <div class="row colPara">Gögüs Hastalıkları</div>
-      </div>
-    </div>
-    <!-- third box -->
-    <div
-      class="col box 1stBox d-flex flex-row justify-content-start align-items-center"
-    >
-      <div class="greyBox">
-        <img src="../../assets/anasayfa/hospital.svg" alt="" class="greyLogo" />
-      </div>
-      <div>
-        <div class="row colTitle">Ataşehir Tıp Merkezi</div>
-        <div class="row colPara">Ataşehir Tıp Merkezi</div>
+        <!-- second box -->
+        <div
+          class="col box 1stBox d-flex flex-row justify-content-start align-items-center"
+        >
+          <img src="../../assets/anasayfa/doktor.svg" alt="" class="doktor" />
+          <div>
+            <div class="row colTitle">Prof. Dr. Mehmet Ali Tahaoğlu</div>
+            <div class="row colPara">Gögüs Hastalıkları</div>
+          </div>
+        </div>
+        <!-- third box -->
+        <div
+          class="col box 1stBox d-flex flex-row justify-content-start align-items-center"
+        >
+          <div class="greyBox">
+            <img
+              src="../../assets/anasayfa/hospital.svg"
+              alt=""
+              class="greyLogo"
+            />
+          </div>
+          <div>
+            <div class="row colTitle">Ataşehir Tıp Merkezi</div>
+            <div class="row colPara">Ataşehir Tıp Merkezi</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
