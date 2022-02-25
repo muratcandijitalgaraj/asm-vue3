@@ -25,20 +25,26 @@
           </div>
         </div>
         <!-- third box -->
-        <div
-          class="col col-sm-12 col-md-12 col-lg-12 col-xl-4 box thirdBox d-flex flex-row justify-content-xl-center justify-content-start align-items-center"
-        >
-          <div class="greyBox">
-            <img
-              src="../../assets/anasayfa/video.svg"
-              alt=""
-              class="greyLogo"
-            />
+        <div class="col col-sm-12 col-md-12 col-lg-12 col-xl-4 box thirdBox">
+          <div class="iconGroup">
+            <img src="../../assets/anasayfa/lab.svg" alt="" class="icon" />
+            <div class="iconPara">Lab</div>
           </div>
-          <div>
-            <div class="row thirdBoxTitle colTitle">
-              Görüntülü Görüşme Randevusu
-            </div>
+          <div class="iconGroup">
+            <img
+              src="../../assets/anasayfa/radyoloji.svg"
+              alt=""
+              class="icon"
+            />
+            <div class="iconPara">Radyoloji</div>
+          </div>
+          <div class="iconGroup">
+            <img src="../../assets/anasayfa/patoloji.svg" alt="" class="icon" />
+            <div class="iconPara">Patoloji</div>
+          </div>
+          <div class="iconGroup">
+            <img src="../../assets/anasayfa/recete.svg" alt="" class="icon" />
+            <div class="iconPara">Reçete</div>
           </div>
         </div>
         <!-- third box ends -->
@@ -106,7 +112,45 @@ export default {};
   padding-left: 1.1rem;
 }
 .thirdBox {
-  padding-right: 2.5rem;
+  /* padding-right: 2.5rem; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.iconGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  width: auto;
+  height: auto;
+}
+.icon {
+  width: auto;
+  height: 18px;
+  /* Primary */
+  margin-bottom: 8px;
+}
+.iconPara {
+  width: auto;
+  height: auto;
+
+  /* text4 */
+
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 130%;
+  /* identical to box height, or 17px */
+
+  text-align: center;
+  letter-spacing: -0.01em;
+
+  /* Primary */
+
+  color: #3c4e69;
 }
 .colTitle {
   width: auto;
@@ -284,6 +328,10 @@ export default {};
   }
   .thirdBox {
     padding-left: 0;
+    justify-content: flex-start;
+  }
+  .iconGroup {
+    margin-right: 2rem;
   }
 }
 @media (max-width: 1000px) {
