@@ -1,13 +1,13 @@
 <template>
-  <div class="cellComponent">
+  <div class="tallCell">
     <div class="logoBox">
       <img src="../../assets/anasayfa/gorusme.svg" alt="" class="logo" />
     </div>
     <div class="container">
-      <div class="row">
+      <div class="row colContainer">
         <!-- first box -->
         <div
-          class="col col-lg-3 box firstBox d-flex flex-column justify-content-center align-items-start"
+          class="col col-sm-12 col-md-12 col-lg-12 col-xl-3 box firstBox d-flex flex-column justify-content-center align-items-start"
         >
           <div class="row colTitle redTitle">Görüşme Bekleniyor</div>
           <div class="row colPara">20 Ocak Pazartesi - 12:30</div>
@@ -15,7 +15,7 @@
 
         <!-- second box -->
         <div
-          class="col box 1stBox d-flex flex-row justify-content-start align-items-center"
+          class="col col-sm-12 col-md-12 col-lg-12 col-xl-4 box 1stBox d-flex flex-row justify-content-start align-items-center"
         >
           <img src="../../assets/anasayfa/doktor.svg" alt="" class="doktor" />
           <div>
@@ -25,7 +25,7 @@
         </div>
         <!-- third box -->
         <div
-          class="col box 1stBox d-flex flex-row justify-content-start align-items-center"
+          class="col col-sm-12 col-md-12 col-lg-12 col-xl-5 box 1stBox d-flex flex-row justify-content-start align-items-center"
         >
           <div class="greyBox">
             <img
@@ -39,7 +39,14 @@
             <div class="row colPara">Ataşehir Tıp Merkezi</div>
           </div>
         </div>
+        <!-- third box ends -->
       </div>
+      <!-- first row ends -->
+      <div class="row greyLineRow">
+        <div class="greyLine col-10"></div>
+      </div>
+      <!-- grey line row ends -->
+      <div class="row">lol</div>
     </div>
   </div>
 </template>
@@ -49,7 +56,7 @@ export default {};
 </script>
 
 <style scoped>
-.cellComponent {
+.tallCell {
   display: flex;
   margin-left: 12px;
   background: #ffffff;
@@ -58,7 +65,17 @@ export default {};
   border-radius: 10px;
   margin-bottom: 20px;
   margin-top: 20px;
-  height: 110px;
+  height: 180px;
+}
+
+.container {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: auto;
+}
+.colContainer {
+  height: auto !important;
+  border: solid;
 }
 .row {
   height: 100%;
@@ -70,7 +87,7 @@ export default {};
   height: 100%;
 }
 .firstBox {
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 .colTitle {
   width: 225px;
@@ -109,8 +126,8 @@ export default {};
 }
 .logoBox {
   width: 40px;
-  height: 100px;
-  background: #ffeeee;
+  height: 170px;
+  background: #fff9f0;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
@@ -118,7 +135,6 @@ export default {};
   align-items: center;
   padding: 0;
   margin-right: 20px;
-
   align-self: center;
   margin-left: 5px;
 }
@@ -146,9 +162,27 @@ export default {};
   height: 22px;
   margin-right: 1rem;
 }
+.greyLineRow {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  border: solid;
+  height: auto !important;
+}
+.greyLine {
+  height: 10px !important;
+  width: 90% !important;
+  background: #dae9f1;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 @media (max-width: 1200px) {
-  .cellComponent {
+  .tallCell {
     flex-direction: column;
     height: 100%;
   }
