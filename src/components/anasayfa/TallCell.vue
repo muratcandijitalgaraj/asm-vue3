@@ -120,13 +120,6 @@ export default {};
   border-radius: 0px;
   margin: 0;
 }
-.greyLine {
-  height: 1px;
-  width: 95%;
-  background: #dae9f1;
-  margin-top: 20px;
-  margin-bottom: 15px;
-}
 .greyBox {
   width: 50px;
   height: 50px;

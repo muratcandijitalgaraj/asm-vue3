@@ -95,14 +95,16 @@ export default {
   flex-direction: column;
   margin: 0;
   padding: 0;
-  z-index: -55;
+}
+.container {
+  z-index: 1;
 }
 .bulutlar {
   position: fixed;
   width: 100%;
   height: auto;
   top: 7rem;
-  z-index: 44;
+  z-index: 0;
 }
 .anasayfa {
   height: 100%;
