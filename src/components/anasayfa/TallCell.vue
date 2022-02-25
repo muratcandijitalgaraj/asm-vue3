@@ -263,6 +263,11 @@ export default {};
   height: 43px !important;
   padding-right: 5%;
 }
+@media (max-width: 1400px) {
+  .doktorTitle {
+    margin-bottom: 1.3rem;
+  }
+}
 @media (max-width: 1200px) {
   .tallCell {
     flex-direction: column;
@@ -277,6 +282,9 @@ export default {};
   .box {
     margin-left: 2rem;
     margin-bottom: 2rem;
+  }
+  .doktorTitle {
+    margin-bottom: 0;
   }
   .firstBox {
     /* margin-left: 5.5rem; */
