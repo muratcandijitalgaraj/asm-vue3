@@ -1,5 +1,5 @@
 <template>
-  <div class="randevularimComponent">
+  <div class="randevuDetay">
     <img src="../assets/anasayfa/bulutlar.svg" alt="" class="bulutlar" />
 
     <div class="container">
@@ -17,7 +17,7 @@
         <div class="col-3 sideBar">
           <SideBar />
         </div>
-
+        <!-- 
         <div class="col rightPart">
           <div class="row cards">
             <div class="col">
@@ -30,7 +30,7 @@
               <Randevulariniz />
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="row footer">
         <Footer />
@@ -64,7 +64,7 @@ export default {
 </script>
 
 <style scoped>
-.randevularimComponent {
+.randevuDetay {
   width: 100%;
   height: auto;
   /* Secondary */
