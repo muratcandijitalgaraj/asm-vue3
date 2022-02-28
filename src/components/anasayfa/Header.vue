@@ -46,10 +46,14 @@ export default {};
 }
 .headerLogoPart {
   margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .logo {
   width: auto;
   height: auto;
+  margin-right: 1.5rem;
 }
 .headerIslemler {
   height: 42px;
