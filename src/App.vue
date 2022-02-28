@@ -29,6 +29,9 @@ html,
 body {
   height: 100%;
 }
+#app {
+  overflow-x: hidden;
+}
 /*
   Typographic tweaks!
   4. Add accessible line-height

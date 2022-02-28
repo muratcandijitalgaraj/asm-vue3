@@ -19,58 +19,54 @@
         </button>
       </div>
       <!-- collapse content -->
-      <div class="collapse container" id="collapseExample">
+      <div class="collapse row" id="collapseExample">
         <!-- without this div, the collapse is not hidden initially -->
-        <div class="row">
-          <div class="item d-flex justify-content-start">
-            <img src="../../assets/sidebar/giris.svg" alt="" class="itemLogo" />
-            <div class="itemPara">Giriş</div>
-          </div>
-          <div class="item d-flex justify-content-start">
-            <img
-              src="../../assets/sidebar/randevularim.svg"
-              alt=""
-              class="itemLogo"
-            />
-            <div class="itemPara">Randevularım</div>
-          </div>
-          <div class="item d-flex justify-content-start">
-            <img
-              src="../../assets/sidebar/kayitlar.svg"
-              alt=""
-              class="itemLogo"
-            />
-            <div class="itemPara">Tıbbi Kayıtlar</div>
-            <img src="../../assets/sidebar/1.svg" alt="" class="notification" />
-          </div>
-          <div class="item d-flex justify-content-start">
-            <img
-              src="../../assets/sidebar/gecmis.svg"
-              alt=""
-              class="itemLogo"
-            />
-            <div class="itemPara">Geçmiş Muayeneler</div>
-          </div>
-          <div class="item d-flex justify-content-start">
-            <img
-              src="../../assets/sidebar/receteler.svg"
-              alt=""
-              class="itemLogo"
-            />
-            <div class="itemPara">Reçeteler</div>
-          </div>
-          <div class="item d-flex justify-content-start">
-            <img src="../../assets/sidebar/hesap.svg" alt="" class="itemLogo" />
-            <div class="itemPara">Hesap Bilgileriniz</div>
-          </div>
-          <div class="item d-flex justify-content-start">
-            <img src="../../assets/sidebar/anket.svg" alt="" class="itemLogo" />
-            <div class="itemPara">Anketimize Katılın</div>
-          </div>
-          <div class="item d-flex justify-content-start">
-            <img src="../../assets/sidebar/cikis.svg" alt="" class="itemLogo" />
-            <div class="itemPara">Çıkış Yap</div>
-          </div>
+        <div
+          class="item col col-lg-6 d-flex justify-content-start justify-content-md-center"
+        >
+          <img src="../../assets/sidebar/giris.svg" alt="" class="itemLogo" />
+          <div class="itemPara">Giriş</div>
+        </div>
+        <div class="item col col-lg-6">
+          <img
+            src="../../assets/sidebar/randevularim.svg"
+            alt=""
+            class="itemLogo"
+          />
+          <div class="itemPara">Randevularım</div>
+        </div>
+        <div class="item">
+          <img
+            src="../../assets/sidebar/kayitlar.svg"
+            alt=""
+            class="itemLogo"
+          />
+          <div class="itemPara">Tıbbi Kayıtlar</div>
+          <img src="../../assets/sidebar/1.svg" alt="" class="notification" />
+        </div>
+        <div class="item">
+          <img src="../../assets/sidebar/gecmis.svg" alt="" class="itemLogo" />
+          <div class="itemPara">Geçmiş Muayeneler</div>
+        </div>
+        <div class="item">
+          <img
+            src="../../assets/sidebar/receteler.svg"
+            alt=""
+            class="itemLogo"
+          />
+          <div class="itemPara">Reçeteler</div>
+        </div>
+        <div class="item">
+          <img src="../../assets/sidebar/hesap.svg" alt="" class="itemLogo" />
+          <div class="itemPara">Hesap Bilgileriniz</div>
+        </div>
+        <div class="item">
+          <img src="../../assets/sidebar/anket.svg" alt="" class="itemLogo" />
+          <div class="itemPara">Anketimize Katılın</div>
+        </div>
+        <div class="item">
+          <img src="../../assets/sidebar/cikis.svg" alt="" class="itemLogo" />
+          <div class="itemPara">Çıkış Yap</div>
         </div>
       </div>
       <!-- row ends below -->
@@ -91,7 +87,6 @@ export default {};
 .foto {
   height: 116px;
   width: 116px;
-  /* border: 1px solid black; */
   border-radius: 0px;
 }
 .collapseButton {
@@ -102,7 +97,7 @@ export default {};
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-center;
   align-items: center;
   margin-bottom: 20px;
 }
