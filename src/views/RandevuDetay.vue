@@ -20,6 +20,12 @@
 
         <div class="col rightPart">
           <!-- start here -->
+          <div class="container">
+              <div class="row">
+            <div class="col bigTitle">Randevu Detayı</div>
+            <div class="col geri d-flex justify-content-end">&lt; Geri Dön</div>
+          </div>
+          </div>
         </div>
       </div>
       <div class="row footer">
@@ -65,6 +71,40 @@ export default {
   margin: 0;
   padding: 0;
 }
+/* page specific styling starts here */
+
+.bigTitle{
+width: 162px;
+height: 29px;
+font-family: Nunito Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 130%;
+/* identical to box height, or 29px */
+/* Primary */
+color: #3C4E69;
+}
+.geri
+{width: 59px;
+height: 21px;
+
+
+/* text3 */
+
+font-family: Nunito Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 140%;
+/* identical to box height, or 21px */
+
+letter-spacing: -0.01em;
+
+/* Gri */
+
+color: #818B9A;}
+/* page specific styling ends here */
 .container {
   z-index: 1;
 }
