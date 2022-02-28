@@ -30,11 +30,10 @@
               <Randevulariniz />
             </div>
           </div>
-
-          <div class="row footer">
-            <!-- <Footer /> -->
-          </div>
         </div>
+      </div>
+      <div class="row footer">
+        <Footer />
       </div>
     </div>
   </div>
@@ -49,7 +48,7 @@ import Top from "../components/randevularim/Top.vue";
 
 import Cards from "../components/anasayfa/Cards.vue";
 import Randevulariniz from "../components/anasayfa/Randevulariniz.vue";
-// import Footer from "../components/shared/Footer.vue";
+import Footer from "../components/shared/Footer.vue";
 
 export default {
   components: {
@@ -59,7 +58,7 @@ export default {
     Cards,
     Randevulariniz,
     Top,
-    // Footer,
+    Footer,
   },
 };
 </script>
