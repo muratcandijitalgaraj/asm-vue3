@@ -10,7 +10,7 @@
       <!-- column -->
 
       <div
-        class="col-12 columns col-sm-6 col-md-3 yerindeContainer d-flex justify-content-center justify-content-xl-end align-items-center"
+        class="col-12 columns col-sm-6 col-md-3 yerindeContainer d-flex flex-column justify-content-center align-items-center"
       >
         <div class="yerindeRandevular">Yerinde Randevular</div>
         <div class="selectedTab"></div>
@@ -33,6 +33,9 @@
       </div>
     </div>
     <!-- row ends -->
+    <div class="row d-flex justify-content-center">
+      <div class="greyLine"></div>
+    </div>
   </div>
 </template>
 
@@ -146,5 +149,22 @@ export default {};
   order: 0;
   flex-grow: 0;
   margin: 0px 10px;
+}
+.selectedTab {
+  position: relative;
+  top: 1rem;
+  width: 25px;
+  height: 5px;
+  background: #32a5df;
+  border-radius: 4px 4px 0px 0px;
+}
+.greyLine {
+  border: 1px solid #dae9f1;
+  width: 90%;
+}
+@media only screen and (max-width: 1200px) {
+  .selectedTab {
+    display: none;
+  }
 }
 </style>
