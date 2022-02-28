@@ -1,23 +1,32 @@
 <template>
   <div class="randevularimTop">
-    <div class="row">
+    <div class="row container">
+      <!-- column -->
       <div
-        class="col randevularimContainer d-flex align-items-center justify-content-start"
+        class="col-12 columns col-sm-6 col-md-3 randevularimContainer justify-content-center justify-content-xl-start d-flex align-items-center"
       >
         <div class="randevularimText">Randevularım</div>
       </div>
-      <div class="col">
-        <div
-          class="yerindeRandevular d-flex align-items-center justify-content-center"
-        >
-          Yerinde Randevular
-        </div>
-        <div class="selectedTab d-flex justify-content-end"></div>
+      <!-- column -->
+
+      <div
+        class="col-12 columns col-sm-6 col-md-3 yerindeContainer d-flex justify-content-center justify-content-xl-end align-items-center"
+      >
+        <div class="yerindeRandevular">Yerinde Randevular</div>
+        <div class="selectedTab"></div>
       </div>
-      <div class="col goruntulu d-flex align-items-center">
-        Görüntülü Görüşme
+      <!-- column -->
+
+      <div
+        class="col-12 columns col-sm-6 col-md-3 goruntuluContainer d-flex justify-content-center justify-content-xl-start align-items-center"
+      >
+        <div class="goruntulu">Görüntülü Görüşme</div>
       </div>
-      <div class="col d-flex justify-content-end">
+      <!-- column -->
+
+      <div
+        class="col-12 columns col-sm-6 col-md-3 d-flex justify-content-center justify-content-xl-end"
+      >
         <button class="button">
           <div class="buttonText">Yeni Randevu Alın</div>
         </button>
@@ -32,9 +41,8 @@ export default {};
 </script>
 
 <style scoped>
-.col {
-  /* display: flex;
-  align-items: center; */
+.columns {
+  margin-bottom: 10px;
 }
 .randevularimTop {
   padding-top: 15px;
@@ -42,7 +50,7 @@ export default {};
 .randevularimContainer {
 }
 .randevularimText {
-  width: 142px;
+  width: auto;
   height: auto;
 
   /* baslik3 */
@@ -59,9 +67,11 @@ export default {};
   color: #3c4e69;
   margin-left: 1rem;
 }
+.yerindeContainer {
+}
 .yerindeRandevular {
   width: auto;
-  height: 100%;
+
   /* baslik4 */
 
   font-family: Nunito Sans;
@@ -75,8 +85,10 @@ export default {};
 
   color: #32a5df;
 }
+.goruntuluContainer {
+}
 .goruntulu {
-  width: 148px;
+  width: auto;
 
   /* baslik4 */
 
