@@ -46,10 +46,9 @@
               <Muayeneler />
             </div>
           </div>
-
-          <div class="row footer">
-            <!-- <Footer /> -->
-          </div>
+        </div>
+        <div class="row footer">
+          <Footer />
         </div>
       </div>
     </div>
@@ -65,7 +64,7 @@ import SideBarTop from "../components/anasayfa/SideBarTop.vue";
 import Cards from "../components/anasayfa/Cards.vue";
 import Randevulariniz from "../components/anasayfa/Randevulariniz.vue";
 import Muayeneler from "../components/anasayfa/Muayeneler.vue";
-// import Footer from "../components/shared/Footer.vue";
+import Footer from "../components/shared/Footer.vue";
 
 export default {
   components: {
@@ -75,7 +74,7 @@ export default {
     Cards,
     Randevulariniz,
     Muayeneler,
-    // Footer,
+    Footer,
   },
 };
 </script>
