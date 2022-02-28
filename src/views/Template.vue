@@ -1,5 +1,5 @@
 <template>
-  <div class="randevuDetay">
+  <div class="templateComponent">
     <img src="../assets/anasayfa/bulutlar.svg" alt="" class="bulutlar" />
 
     <div class="container">
@@ -50,7 +50,7 @@ export default {
 </script>
 
 <style scoped>
-.randevuDetay {
+.templateComponent {
   width: 100%;
   height: auto;
   /* Secondary */
