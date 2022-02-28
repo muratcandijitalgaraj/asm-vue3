@@ -19,54 +19,90 @@
         </button>
       </div>
       <!-- collapse content -->
-      <div class="collapse row" id="collapseExample">
+      <div class="collapse" id="collapseExample">
         <!-- without this div, the collapse is not hidden initially -->
-        <div
-          class="item col col-lg-6 d-flex justify-content-start justify-content-md-center"
-        >
-          <img src="../../assets/sidebar/giris.svg" alt="" class="itemLogo" />
-          <div class="itemPara">Giriş</div>
-        </div>
-        <div class="item col col-lg-6">
-          <img
-            src="../../assets/sidebar/randevularim.svg"
-            alt=""
-            class="itemLogo"
-          />
-          <div class="itemPara">Randevularım</div>
-        </div>
-        <div class="item">
-          <img
-            src="../../assets/sidebar/kayitlar.svg"
-            alt=""
-            class="itemLogo"
-          />
-          <div class="itemPara">Tıbbi Kayıtlar</div>
-          <img src="../../assets/sidebar/1.svg" alt="" class="notification" />
-        </div>
-        <div class="item">
-          <img src="../../assets/sidebar/gecmis.svg" alt="" class="itemLogo" />
-          <div class="itemPara">Geçmiş Muayeneler</div>
-        </div>
-        <div class="item">
-          <img
-            src="../../assets/sidebar/receteler.svg"
-            alt=""
-            class="itemLogo"
-          />
-          <div class="itemPara">Reçeteler</div>
-        </div>
-        <div class="item">
-          <img src="../../assets/sidebar/hesap.svg" alt="" class="itemLogo" />
-          <div class="itemPara">Hesap Bilgileriniz</div>
-        </div>
-        <div class="item">
-          <img src="../../assets/sidebar/anket.svg" alt="" class="itemLogo" />
-          <div class="itemPara">Anketimize Katılın</div>
-        </div>
-        <div class="item">
-          <img src="../../assets/sidebar/cikis.svg" alt="" class="itemLogo" />
-          <div class="itemPara">Çıkış Yap</div>
+        <div class="row">
+          <div class="col col-sm-12 col-md-6">
+            <div class="item">
+              <img
+                src="../../assets/sidebar/giris.svg"
+                alt=""
+                class="itemLogo"
+              />
+              <div class="itemPara">Giriş</div>
+            </div>
+            <div class="item">
+              <img
+                src="../../assets/sidebar/randevularim.svg"
+                alt=""
+                class="itemLogo"
+              />
+              <div class="itemPara">Randevularım</div>
+            </div>
+            <div class="item">
+              <img
+                src="../../assets/sidebar/kayitlar.svg"
+                alt=""
+                class="itemLogo"
+              />
+              <div class="itemPara">Tıbbi Kayıtlar</div>
+              <img
+                src="../../assets/sidebar/1.svg"
+                alt=""
+                class="notification"
+              />
+            </div>
+            <div class="item">
+              <img
+                src="../../assets/sidebar/gecmis.svg"
+                alt=""
+                class="itemLogo"
+              />
+              <div class="itemPara">Geçmiş Muayeneler</div>
+            </div>
+          </div>
+          <div class="col col-sm-12 col-md-6">
+            <div
+              class="item d-flex justify-content-md-end justify-content-sm-start"
+            >
+              <img
+                src="../../assets/sidebar/receteler.svg"
+                alt=""
+                class="itemLogo"
+              />
+              <div class="itemPara">Reçeteler</div>
+            </div>
+            <div
+              class="item d-flex justify-content-md-end justify-content-sm-start"
+            >
+              <img
+                src="../../assets/sidebar/hesap.svg"
+                alt=""
+                class="itemLogo"
+              />
+              <div class="itemPara">Hesap Bilgileriniz</div>
+            </div>
+            <div
+              class="item d-flex justify-content-md-end justify-content-sm-start"
+            >
+              <img
+                src="../../assets/sidebar/anket.svg"
+                alt=""
+                class="itemLogo"
+              />
+              <div class="itemPara">Anketimize Katılın</div>
+            </div>
+            <div
+              class="item d-flex justify-content-md-end justify-content-sm-start"
+            >
+              <img
+                src="../../assets/sidebar/cikis.svg"
+                alt=""
+                class="itemLogo"
+              />
+              <div class="itemPara">Çıkış Yap</div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- row ends below -->
@@ -83,6 +119,8 @@ export default {};
   background: #f9fdff;
 }
 .row {
+}
+.col {
 }
 .foto {
   height: 116px;
