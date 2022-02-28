@@ -7,7 +7,7 @@
       <div class="row colContainer">
         <!-- first box -->
         <div
-          class="col col-sm-12 col-md-12 col-lg-12 col-xl-3 box firstBox d-flex flex-column justify-content-center align-items-start"
+          class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 box firstBox d-flex flex-column justify-content-center align-items-start"
         >
           <div class="row colTitle greenTitle">Görüşme Bekleniyor</div>
           <div class="row colPara">20 Ocak Pazartesi - 12:30</div>
@@ -15,7 +15,7 @@
 
         <!-- second box -->
         <div
-          class="col col-sm-12 col-md-12 col-lg-12 col-xl-4 box secondBox d-flex flex-row justify-content-start align-items-center"
+          class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 box secondBox d-flex flex-row justify-content-start align-items-center"
         >
           <img src="../../assets/anasayfa/doktor.svg" alt="" class="doktor" />
           <div>
@@ -27,7 +27,7 @@
         </div>
         <!-- third box -->
         <div
-          class="col col-sm-12 col-md-12 col-lg-12 col-xl-5 box thirdBox d-flex flex-row justify-content-xl-center justify-content-start align-items-center"
+          class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 box thirdBox d-flex flex-row justify-content-xl-center justify-content-start align-items-center"
         >
           <div class="greyBox">
             <img
@@ -70,7 +70,7 @@ export default {};
 .row {
   height: 100%;
 }
-.col {
+.col-xs-12 {
   height: 100% !important;
 }
 .box {

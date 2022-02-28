@@ -9,7 +9,7 @@
 
       <div class="row sideBarTopRow">
         <div class="col sideBarTop">
-          <!-- <SideBarTop class="sideBarTop" /> -->
+          <SideBarTop class="sideBarTop" />
         </div>
       </div>
 
@@ -60,7 +60,7 @@
 /* eslint-disable vue/no-unused-components */
 import Header from "../components/anasayfa/Header.vue";
 import SideBar from "../components/anasayfa/SideBar.vue";
-// import SideBarTop from "../components/anasayfa/SideBarTop.vue";
+import SideBarTop from "../components/anasayfa/SideBarTop.vue";
 
 import Cards from "../components/anasayfa/Cards.vue";
 import Randevulariniz from "../components/anasayfa/Randevulariniz.vue";
@@ -71,7 +71,7 @@ export default {
   components: {
     Header,
     SideBar,
-    // SideBarTop,
+    SideBarTop,
     Cards,
     Randevulariniz,
     Muayeneler,
