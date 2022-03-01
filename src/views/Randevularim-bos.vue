@@ -108,7 +108,7 @@ export default {
 }
 .flexContainer {
   z-index: 1;
-  border: solid;
+  height: 500px !important;
 }
 .bigTitle {
   font-family: Nunito Sans;
@@ -185,15 +185,8 @@ export default {
   height: auto;
   top: 7rem;
   z-index: 0;
-  border: 2px solid black;
 }
-.anasayfa {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  z-index: 60;
-}
+
 .header {
   width: auto;
   height: auto;
@@ -228,25 +221,7 @@ export default {
 
   color: #32a5df;
 }
-.para {
-  width: auto;
-  height: auto;
 
-  /* text4-bold */
-
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 130%;
-  /* identical to box height, or 17px */
-
-  letter-spacing: -0.01em;
-
-  /* Gri */
-
-  color: #818b9a;
-}
 .footer {
   height: 200px;
   width: auto;
@@ -255,8 +230,7 @@ export default {
 .container {
 }
 .greyPart {
-  min-height: 1018px;
-  height: 100%;
+  height: auto;
   width: auto;
   background: #f2f8fb;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
