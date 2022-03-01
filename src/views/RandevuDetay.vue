@@ -21,12 +21,30 @@
         <div class="col rightPart">
           <!-- start here -->
           <div class="container">
-              <div class="row">
-            <div class="col bigTitle">Randevu Detayı</div>
-            <div class="col geri d-flex justify-content-end">&lt; Geri Dön</div>
-          </div>
+            <div class="row topPart">
+              <div class="col bigTitle">Randevu Detayı</div>
+              <div
+                class="col geri d-flex justify-content-end align-items-center"
+              >
+                <span class="sign">
+                  <!-- &lt; -->
+                  <img
+                    class="sign"
+                    src="../assets/randevular/sign.svg"
+                    alt=""
+                  />
+                </span>
+
+                Geri Dön
+              </div>
+            </div>
+            <!-- row ends -->
+            <div class="row">
+              <div class="greyLine"></div>
+            </div>
           </div>
         </div>
+        <!-- right part col ends -->
       </div>
       <div class="row footer">
         <Footer />
@@ -72,38 +90,50 @@ export default {
   padding: 0;
 }
 /* page specific styling starts here */
-
-.bigTitle{
-width: 162px;
-height: 29px;
-font-family: Nunito Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 22px;
-line-height: 130%;
-/* identical to box height, or 29px */
-/* Primary */
-color: #3C4E69;
+.topPart {
+  margin-top: 1.5rem;
 }
-.geri
-{width: 59px;
-height: 21px;
-
-
-/* text3 */
-
-font-family: Nunito Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 140%;
-/* identical to box height, or 21px */
-
-letter-spacing: -0.01em;
-
-/* Gri */
-
-color: #818B9A;}
+.bigTitle {
+  width: 162px;
+  height: 29px;
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 130%;
+  /* identical to box height, or 29px */
+  /* Primary */
+  color: #3c4e69;
+}
+.geri {
+  width: 59px;
+  height: 21px;
+  /* text3 */
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  /* identical to box height, or 21px */
+  letter-spacing: -0.01em;
+  /* Gri */
+  color: #818b9a;
+}
+.sign {
+  width: auto;
+  height: auto;
+  /* font-size: 1.5rem;
+  font-weight: 900;
+  color: #818b9a; */
+  margin-right: 5px;
+  padding-bottom: 1px;
+}
+.greyLine {
+  height: 2px;
+  width: 100%;
+  border: 1px solid #dae9f1;
+  margin: 1.5rem 0 1rem 0;
+}
 /* page specific styling ends here */
 .container {
   z-index: 1;
@@ -207,6 +237,7 @@ color: #818B9A;}
 }
 .sideBarTop {
 }
+
 @media screen and (max-width: 992px) {
   .sideBar {
     display: none;
