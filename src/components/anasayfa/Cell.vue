@@ -7,7 +7,7 @@
       <div class="row colContainer">
         <!-- first box -->
         <div
-          class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 box firstBox d-flex flex-column justify-content-center align-items-start"
+          class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 box firstBox"
         >
           <div class="row colTitle redTitle">Görüşme Bekleniyor</div>
           <div class="row colPara">20 Ocak Pazartesi - 12:30</div>
@@ -15,7 +15,7 @@
 
         <!-- second box -->
         <div
-          class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 box secondBox d-flex flex-row justify-content-start align-items-center"
+          class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 box secondBox d-flex"
         >
           <img src="../../assets/anasayfa/doktor.svg" alt="" class="doktor" />
           <div>
@@ -27,7 +27,7 @@
         </div>
         <!-- third box -->
         <div
-          class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 box thirdBox d-flex flex-row justify-content-xl-center justify-content-start align-items-center"
+          class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 box thirdBox"
         >
           <div class="greyBox">
             <img
@@ -81,6 +81,24 @@ export default {};
 }
 .firstBox {
   padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.secondBox {
+  /* flex-row justify-content-start align-items-center */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.thirdBox {
+  /* d-flex flex-row justify-content-xl-center justify-content-start align-items-center */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .colTitle {
   width: auto;
