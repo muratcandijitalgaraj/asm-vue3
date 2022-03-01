@@ -42,6 +42,22 @@
             <div class="row">
               <div class="greyLine"></div>
             </div>
+            <div class="row whiteSpace">
+              <div class="container">
+                <div class="row">
+                  <div
+                    class="col d-flex justify-content-start align-items-center informativeCard"
+                  >
+                    <img
+                      src="../assets/randevular/calendar.svg"
+                      alt=""
+                      class="logo"
+                    />
+                    <div class="redTitle">Görüşme Bekleniyor...</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- right part col ends -->
@@ -133,6 +149,35 @@ export default {
   width: 100%;
   border: 1px solid #dae9f1;
   margin: 1.5rem 0 1rem 0;
+}
+.whiteSpace {
+  width: auto;
+  height: 500px;
+  background: white;
+  box-shadow: 0px 1px 3px rgba(42, 49, 55, 0.11);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.informativeCard {
+  width: 100%;
+  height: 50px;
+  background: #ffeeee;
+  border-radius: 5px;
+}
+.redTitle {
+  margin-left: 12px;
+  width: 159px;
+  height: 24px;
+  /* baslik4 */
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+  /* Kırmızı */
+  color: #ea5455;
 }
 /* page specific styling ends here */
 .container {
