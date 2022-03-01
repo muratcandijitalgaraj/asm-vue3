@@ -46,7 +46,7 @@
               <div class="container">
                 <div class="row">
                   <div
-                    class="col d-flex justify-content-start align-items-center informativeCard"
+                    class="col-12 d-flex justify-content-start align-items-center informativeCard"
                   >
                     <img
                       src="../assets/randevular/calendar.svg"
@@ -55,6 +55,44 @@
                     />
                     <div class="redTitle">Görüşme Bekleniyor...</div>
                   </div>
+                  <!-- col -->
+                  <div
+                    class="col-12 doktorCard d-flex align-items-center justify-content-start"
+                  >
+                    <img
+                      src="../assets/randevular/doktor.svg"
+                      alt=""
+                      class="doktor"
+                    />
+                    <div
+                      class="d-flex flex-column align-items-start justify-content-center"
+                    >
+                      <div class="doktorTitle">
+                        Prof. Dr. Mehmet Ali Tahaoğlu
+                      </div>
+                      <div class="para">Göğüs Hastalıkları</div>
+                    </div>
+                  </div>
+                  <!-- col -->
+                  <div
+                    class="col-12 greyCard d-flex flex-column flex-sm-column flex-md-row align-items-sm-start"
+                  >
+                    <div
+                      class="redDoktorContainer col col-sm-12 col-md-3 d-flex align-items-center"
+                    >
+                      <img
+                        src="../assets/randevular/note.svg"
+                        alt=""
+                        class="logo"
+                      />
+                      <div class="doktorNote">Doktorun Notu</div>
+                    </div>
+
+                    <div class="col col-sm-12 col-md-3 para">
+                      Lütfen muayeneye aç karnına gelin.
+                    </div>
+                  </div>
+                  <!-- col -->
                 </div>
               </div>
             </div>
@@ -90,6 +128,9 @@ export default {
 </script>
 
 <style scoped>
+.col {
+  /* border: solid; */
+}
 .randevuDetay {
   width: 100%;
   height: auto;
@@ -179,6 +220,68 @@ export default {
   /* Kırmızı */
   color: #ea5455;
 }
+.doktorCard {
+  margin-top: 22px;
+}
+.doktor {
+  margin-right: 17px;
+}
+.doktorTitle {
+  width: 225px;
+  height: 24px;
+
+  /* baslik4 */
+
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+
+  /* Primary */
+
+  color: #3c4e69;
+}
+.para {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 140%;
+  /* identical to box height, or 21px */
+  letter-spacing: -0.01em;
+
+  /* Primary */
+
+  color: #3c4e69;
+}
+.greyCard {
+  background: #fafafa;
+  border-radius: 5px;
+  height: 50px;
+  margin-top: 1rem;
+}
+.doktorNote {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 140%;
+  /* identical to box height, or 21px */
+
+  letter-spacing: -0.01em;
+
+  /* Kırmızı */
+
+  color: #ea5455;
+  margin-left: 8px;
+}
+.redDoktorContainer {
+  width: auto;
+  margin-right: 20px;
+}
+
 /* page specific styling ends here */
 .container {
   z-index: 1;
@@ -231,25 +334,7 @@ export default {
 
   color: #32a5df;
 }
-.para {
-  width: auto;
-  height: auto;
 
-  /* text4-bold */
-
-  font-family: Nunito Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 130%;
-  /* identical to box height, or 17px */
-
-  letter-spacing: -0.01em;
-
-  /* Gri */
-
-  color: #818b9a;
-}
 .footer {
   height: 200px;
   width: auto;
@@ -316,9 +401,9 @@ export default {
     margin-bottom: 1rem;
   }
 }
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
   .para {
     text-align: right;
   }
-}
+} */
 </style>
