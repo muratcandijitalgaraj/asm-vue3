@@ -92,7 +92,84 @@
                       Lütfen muayeneye aç karnına gelin.
                     </div>
                   </div>
+                  <div class="greyLine"></div>
+
                   <!-- col -->
+                  <div
+                    class="col cards d-flex flex-row align-items-center justify-content-start"
+                  >
+                    <img
+                      src="../assets/randevular/kim.svg"
+                      alt=""
+                      class="cardLogo"
+                    />
+                    <div
+                      class="cardTexts d-flex flex-column justify-content-center"
+                    >
+                      <div class="cardTitle">Kim için</div>
+                      <div class="cardPara">Mehmet Balkan</div>
+                    </div>
+                  </div>
+                  <div class="greyLine"></div>
+                  <!-- col -->
+                  <div
+                    class="col cards d-flex flex-row align-items-center justify-content-start"
+                  >
+                    <img
+                      src="../assets/randevular/tarih.svg"
+                      alt=""
+                      class="cardLogo"
+                    />
+                    <div
+                      class="cardTexts d-flex flex-column justify-content-center"
+                    >
+                      <div class="cardTitle">Tarih</div>
+                      <div class="cardPara">
+                        14 Ağustos 2020 - Pazartesi 15:30
+                      </div>
+                    </div>
+                  </div>
+                  <div class="greyLine"></div>
+                  <!-- col -->
+                  <div
+                    class="col cards d-flex flex-row align-items-center justify-content-start"
+                  >
+                    <img
+                      src="../assets/randevular/randevu.svg"
+                      alt=""
+                      class="cardLogo"
+                    />
+                    <div
+                      class="cardTexts d-flex flex-column justify-content-center"
+                    >
+                      <div class="cardTitle">Randevu Türü</div>
+                      <div class="cardPara">Ataşehir Tıp Merkezi</div>
+                    </div>
+                  </div>
+                  <div class="greyLine"></div>
+                  <!-- col -->
+                  <div
+                    class="col cards d-flex flex-row align-items-center justify-content-start"
+                  >
+                    <img
+                      src="../assets/randevular/sikayet.svg"
+                      alt=""
+                      class="cardLogo"
+                    />
+                    <div
+                      class="cardTexts d-flex flex-column justify-content-center"
+                    >
+                      <div class="cardTitle">Şikayet</div>
+                      <div class="cardPara">
+                        Gögüs boşlugumda ara ara ağrılar hissediyorum. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit, sed
+                        do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -186,14 +263,14 @@ export default {
   padding-bottom: 1px;
 }
 .greyLine {
-  height: 2px;
+  height: 1px;
   width: 100%;
-  border: 1px solid #dae9f1;
+  background: #dae9f1;
   margin: 1.5rem 0 1rem 0;
 }
 .whiteSpace {
   width: auto;
-  height: 500px;
+  height: auto;
   background: white;
   box-shadow: 0px 1px 3px rgba(42, 49, 55, 0.11);
   border-radius: 10px;
@@ -282,7 +359,35 @@ export default {
   width: auto;
   margin-right: 20px;
 }
+.cardLogo {
+  margin-right: 1rem;
+}
+.cardTitle {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 140%;
+  /* identical to box height, or 21px */
 
+  letter-spacing: -0.01em;
+
+  /* Gri */
+
+  color: #818b9a;
+}
+.cardPara {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+
+  /* Primary */
+
+  color: #3c4e69;
+}
 /* page specific styling ends here */
 .container {
   z-index: 1;
