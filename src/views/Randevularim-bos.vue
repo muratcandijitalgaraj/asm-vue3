@@ -18,33 +18,38 @@
           <SideBar />
         </div>
 
-        <div
-          class="col rightPart d-flex justify-content-center aling-items-center"
-        >
+        <div class="col rightPart">
           <!-- start here -->
-          <img
-            src="../assets/randevular/randevularim-bos/bulutlar.svg"
-            alt=""
-            class="bulutlarBos"
-          />
-          <div
-            class="flexContainer d-flex flex-column justify-content-center aling-items-center"
-          >
+          <div class="row cards">
+            <div class="col">
+              <Top />
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center aling-items-center">
             <img
-              src="../assets/randevular/randevularim-bos/calendar.svg"
+              src="../assets/randevular/randevularim-bos/bulutlar.svg"
               alt=""
-              class="bigLogo"
+              class="bulutlarBos"
             />
-            <div class="bigTitle d-flex justify-content-center">
-              Randevunuz bulunmuyor.
-            </div>
-            <div class="blueTitle d-flex justify-content-center">
-              Randevu almak için aşağıdaki butonu kullabilirsiniz
-            </div>
-            <div class="d-flex justify-content-center">
-              <button class="button">
-                <div class="buttonText">Yeni Randevu Alın</div>
-              </button>
+            <div
+              class="flexContainer d-flex flex-column justify-content-center aling-items-center"
+            >
+              <img
+                src="../assets/randevular/randevularim-bos/calendar.svg"
+                alt=""
+                class="bigLogo"
+              />
+              <div class="bigTitle d-flex justify-content-center">
+                Randevunuz bulunmuyor.
+              </div>
+              <div class="titleBlue d-flex justify-content-center">
+                Randevu almak için aşağıdaki butonu kullabilirsiniz
+              </div>
+              <div class="d-flex justify-content-center">
+                <button class="button">
+                  <div class="buttonText">Yeni Randevu Alın</div>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -61,7 +66,7 @@
 import Header from "../components/anasayfa/Header.vue";
 import SideBar from "../components/anasayfa/SideBar.vue";
 import SideBarTop from "../components/anasayfa/SideBarTop.vue";
-import Top from "../components/randevularim/Top.vue";
+import Top from "../components/randevularim/TopNoBtn.vue";
 
 import Footer from "../components/shared/Footer.vue";
 
@@ -126,7 +131,7 @@ export default {
   color: #3c4e69;
   margin-bottom: 13px;
 }
-.bluetitle {
+.titleBlue {
   font-family: Nunito Sans;
   font-style: normal;
   font-weight: bold;
@@ -142,6 +147,7 @@ export default {
   color: #32a5df;
   margin-bottom: 23px;
 }
+
 .button {
   display: flex;
   flex-direction: row;
