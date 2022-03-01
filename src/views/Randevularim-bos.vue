@@ -108,13 +108,15 @@ export default {
 }
 .bulutlarBos {
   position: absolute;
-  top: 13rem;
+  top: 15rem;
 
   z-index: 0;
 }
 .flexContainer {
   z-index: 1;
   height: auto !important;
+  margin-top: 15%;
+  margin-bottom: 15%;
 }
 .bigTitle {
   font-family: Nunito Sans;
@@ -265,7 +267,7 @@ export default {
 }
 @media only screen and (max-width: 1200px) {
   .bulutlarBos {
-    top: 13rem;
+    top: 15.5rem;
     width: 700px;
   }
 }
@@ -299,13 +301,13 @@ export default {
     top: 12rem;
   }
   .bulutlarBos {
-    top: 20rem;
+    top: 26rem;
     width: 600px;
   }
 }
 @media (max-width: 900px) {
   .bulutlarBos {
-    top: 26rem;
+    top: 32rem;
     width: 500px;
   }
 }
