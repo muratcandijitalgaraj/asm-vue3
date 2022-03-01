@@ -75,7 +75,7 @@
                   </div>
                   <!-- col -->
                   <div
-                    class="col-12 greyCard d-flex flex-column flex-sm-column flex-md-row align-items-sm-start"
+                    class="col-12 greyCard d-flex flex-column flex-sm-column flex-md-row align-items-sm-start align-items-md-center"
                   >
                     <div
                       class="redDoktorContainer col col-sm-12 col-md-3 d-flex align-items-center"
@@ -259,7 +259,7 @@ export default {
 .greyCard {
   background: #fafafa;
   border-radius: 5px;
-  height: 50px;
+  height: auto;
   margin-top: 1rem;
 }
 .doktorNote {
