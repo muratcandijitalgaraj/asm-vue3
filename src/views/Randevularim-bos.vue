@@ -22,6 +22,11 @@
           class="col rightPart d-flex justify-content-center aling-items-center"
         >
           <!-- start here -->
+          <img
+            src="../assets/randevular/randevularim-bos/bulutlar.svg"
+            alt=""
+            class="bulutlarBos"
+          />
           <div
             class="flexContainer d-flex flex-column justify-content-center aling-items-center"
           >
@@ -36,9 +41,11 @@
             <div class="blueTitle d-flex justify-content-center">
               Randevu almak için aşağıdaki butonu kullabilirsiniz
             </div>
-            <button class="button">
-              <div class="buttonText">Yeni Randevu Alın</div>
-            </button>
+            <div class="d-flex justify-content-center">
+              <button class="button">
+                <div class="buttonText">Yeni Randevu Alın</div>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -93,6 +100,84 @@ export default {
   width: auto;
   height: 120px;
 }
+.bulutlarBos {
+  position: absolute;
+  top: 30rem;
+
+  z-index: 0;
+}
+.flexContainer {
+  z-index: 1;
+  border: solid;
+}
+.bigTitle {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 130%;
+  /* identical to box height, or 34px */
+
+  letter-spacing: -0.01em;
+
+  /* Primary */
+
+  color: #3c4e69;
+}
+.bluetitle {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 130%;
+  /* or 26px */
+
+  text-align: center;
+  letter-spacing: -0.01em;
+
+  /* Secondary */
+
+  color: #32a5df;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+
+  width: 235px;
+  height: 60px;
+
+  /* Button Primary */
+
+  background: #ff7c32;
+  border: none;
+  border-radius: 6px;
+}
+.buttonText {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 110%;
+  /* identical to box height, or 20px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Beyaz */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
+}
 /* component ends */
 .bulutlar {
   position: fixed;
@@ -100,6 +185,7 @@ export default {
   height: auto;
   top: 7rem;
   z-index: 0;
+  border: 2px solid black;
 }
 .anasayfa {
   height: 100%;
