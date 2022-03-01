@@ -18,8 +18,28 @@
           <SideBar />
         </div>
 
-        <div class="col rightPart">
+        <div
+          class="col rightPart d-flex justify-content-center aling-items-center"
+        >
           <!-- start here -->
+          <div
+            class="flexContainer d-flex flex-column justify-content-center aling-items-center"
+          >
+            <img
+              src="../assets/randevular/randevularim-bos/calendar.svg"
+              alt=""
+              class="bigLogo"
+            />
+            <div class="bigTitle d-flex justify-content-center">
+              Randevunuz bulunmuyor.
+            </div>
+            <div class="blueTitle d-flex justify-content-center">
+              Randevu almak için aşağıdaki butonu kullabilirsiniz
+            </div>
+            <button class="button">
+              <div class="buttonText">Yeni Randevu Alın</div>
+            </button>
+          </div>
         </div>
       </div>
       <div class="row footer">
@@ -68,6 +88,12 @@ export default {
 .container {
   z-index: 1;
 }
+/* component specific style starts */
+.bigLogo {
+  width: auto;
+  height: 120px;
+}
+/* component ends */
 .bulutlar {
   position: fixed;
   width: 100%;
