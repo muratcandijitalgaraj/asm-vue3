@@ -99,16 +99,17 @@ export default {
 .bigLogo {
   width: auto;
   height: 120px;
+  margin-bottom: 30px;
 }
 .bulutlarBos {
   position: absolute;
-  top: 30rem;
+  top: 13rem;
 
   z-index: 0;
 }
 .flexContainer {
   z-index: 1;
-  height: 500px !important;
+  height: auto !important;
 }
 .bigTitle {
   font-family: Nunito Sans;
@@ -123,6 +124,7 @@ export default {
   /* Primary */
 
   color: #3c4e69;
+  margin-bottom: 13px;
 }
 .bluetitle {
   font-family: Nunito Sans;
@@ -138,6 +140,7 @@ export default {
   /* Secondary */
 
   color: #32a5df;
+  margin-bottom: 23px;
 }
 .button {
   display: flex;
@@ -178,6 +181,7 @@ export default {
   flex-grow: 0;
   margin: 0px 10px;
 }
+
 /* component ends */
 .bulutlar {
   position: fixed;
@@ -253,7 +257,19 @@ export default {
 }
 .sideBarTop {
 }
+@media only screen and (max-width: 1200px) {
+  .bulutlarBos {
+    top: 13rem;
+    width: 700px;
+  }
+}
+
 @media screen and (max-width: 992px) {
+  /* do this so that there won't be a white space at the bottom of the page */
+  .greyPart {
+    min-height: 418px;
+    height: 100%;
+  }
   .sideBar {
     display: none;
   }
@@ -275,6 +291,16 @@ export default {
   }
   .bulutlar {
     top: 12rem;
+  }
+  .bulutlarBos {
+    top: 20rem;
+    width: 600px;
+  }
+}
+@media (max-width: 900px) {
+  .bulutlarBos {
+    top: 26rem;
+    width: 500px;
   }
 }
 @media (max-width: 576px) {
