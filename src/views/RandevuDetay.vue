@@ -259,6 +259,7 @@ export default {
 .greyCard {
   background: #fafafa;
   border-radius: 5px;
+  min-height: 50px;
   height: auto;
   margin-top: 1rem;
 }
